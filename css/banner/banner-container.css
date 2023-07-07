@@ -1,0 +1,21 @@
+.banner__container {
+   align-items: flex-end;
+   display: flex;
+
+   background-image: linear-gradient(
+         180deg,
+         rgba(255, 255, 255, 0),
+         rgba(0, 0, 0, 0.6) 80%
+      ),
+      url(../../assets/img/banner.png);
+
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   box-sizing: border-box;
+   padding: 2rem;
+
+   width: 100vw;
+   height: 22rem;
+}

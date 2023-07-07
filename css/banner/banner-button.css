@@ -1,0 +1,12 @@
+.banner__button {
+   border: none;
+
+   background-color: var(--cyan);
+
+   color: var(--white);
+   font-size: 0.875;
+   font-weight: 600;
+
+   height: 2.5rem;
+   width: 7.4375rem;
+}
