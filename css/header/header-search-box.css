@@ -1,0 +1,18 @@
+.header__search-box {
+   background: var(--light-grey);
+   background-image: url(../assets/img/magnify-logo.svg);
+   background-position: 232px 8px;
+
+   background-repeat: no-repeat;
+
+   border: none;
+   border-radius: 20px;
+
+   width: 17rem;
+   height: 2.5rem;
+}
+.header__search-box::placeholder {
+   color: var(--medium-grey);
+   padding: 1rem;
+   font-family: var(--Raleway);
+}
