@@ -19,3 +19,10 @@
    width: 100vw;
    height: 22rem;
 }
+
+@media screen and (max-width: 426px) {
+   .banner__container {
+      height: 12rem;
+      padding: 1rem;
+   }
+}

@@ -6,3 +6,12 @@
    width: 44rem;
    height: 9.93rem;
 }
+
+@media screen and (max-width: 426px) {
+   .banner__box {
+      gap: 0.5rem;
+      justify-content: flex-end;
+      height: 6.125rem;
+      width: 20.375rem;
+   }
+}

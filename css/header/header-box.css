@@ -6,3 +6,8 @@
    height: 2.5rem;
    width: 25.25rem;
 }
+@media screen and (max-width: 426px) {
+   .header__box {
+      width: 6.25rem;
+   }
+}

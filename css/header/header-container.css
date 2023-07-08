@@ -1,7 +1,22 @@
 .header__container {
    align-items: center;
+   box-sizing: border-box;
    display: flex;
    justify-content: space-between;
    height: 4.5rem;
    padding: 0 2rem;
+}
+
+.header__hidden {
+   display: none;
+}
+@media screen and (max-width: 426px) {
+   .header__container {
+      gap: 16px;
+      padding: 1rem;
+   }
+
+   .header__hidden {
+      display: flex;
+   }
 }

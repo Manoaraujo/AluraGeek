@@ -16,3 +16,9 @@
    padding: 1rem;
    font-family: var(--Raleway);
 }
+
+@media screen and (max-width: 426px) {
+   .header__search-box {
+      display: none;
+   }
+}

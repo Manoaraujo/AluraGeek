@@ -3,3 +3,10 @@
    font-weight: bold;
    color: var(--white);
 }
+
+@media screen and (max-width: 426px) {
+   .banner__text {
+      font-size: 0.875rem;
+      font-weight: 600;
+   }
+}
