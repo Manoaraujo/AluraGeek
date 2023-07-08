@@ -1,6 +1,6 @@
 .header__search-box {
    background: var(--light-grey);
-   background-image: url(../assets/img/magnify-logo.svg);
+   background-image: url(../../assets/img/magnify-logo.svg);
    background-position: 232px 8px;
 
    background-repeat: no-repeat;
