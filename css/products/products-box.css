@@ -1,0 +1,10 @@
+.products__box {
+   align-items: center;
+   display: flex;
+
+   gap: 1rem;
+   justify-content: space-evenly;
+
+   width: 44rem;
+   height: 15.75rem;
+}

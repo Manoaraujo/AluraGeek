@@ -1,0 +1,5 @@
+.products__more {
+   align-items: center;
+   display: flex;
+   gap: 0.5rem;
+}

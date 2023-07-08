@@ -1,0 +1,11 @@
+.products__container {
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+
+   padding: 2rem;
+   gap: 1rem;
+
+   width: 100vw;
+   height: 22.375rem;
+}

@@ -1,0 +1,12 @@
+.products__items {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   justify-content: flex-start;
+}
+
+@media screen and (max-width: 769px) {
+   .products__hidden {
+      display: none;
+   }
+}

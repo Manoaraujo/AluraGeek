@@ -1,0 +1,5 @@
+.products__link {
+   text-decoration: none;
+   color: var(--cyan);
+   font-weight: bold;
+}

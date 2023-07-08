@@ -1,0 +1,7 @@
+.products__headline {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+
+   width: 44rem;
+}
