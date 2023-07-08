@@ -1,0 +1,26 @@
+.footer__form-field {
+   background: var(--white);
+   border-radius: 0.25rem;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 0.25rem;
+   height: 3.5rem;
+
+   padding: 0 0.75rem;
+}
+
+.footer__form-field-message {
+   height: 5.125rem;
+}
+
+.footer__form-field-text {
+   font-family: var(--Raleway);
+   font-size: 1rem;
+   line-height: 1.25rem;
+   border: none;
+}
+
+.footer__form-field-text-message {
+   resize: none;
+}

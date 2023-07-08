@@ -1,11 +1,14 @@
 :root {
    --light-grey: #f5f5f5;
+   --medium-light-grey: #c8c8c8;
    --medium-grey: #a2a2a2;
    --grey: #464646;
 
    --white: #ffffff;
 
    --cyan: #2a7ae4;
+
+   --light-blue: #eaf2fd;
 
    --Raleway: "Raleway", sans-serif;
 

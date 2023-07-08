@@ -1,0 +1,17 @@
+.footer__about {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   gap: 1rem;
+   width: 15.875rem;
+}
+
+.footer__about-list {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+.footer__about-list-item-link {
+   text-decoration: none;
+   color: var(--grey);
+   font-weight: 500;
+}

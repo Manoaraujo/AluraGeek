@@ -1,0 +1,22 @@
+input:focus,
+textarea:focus {
+   outline: none;
+}
+
+.footer__form {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+
+   width: 27.125rem;
+   height: 14.3125rem;
+}
+.footer__form-line {
+   color: var(--medium-light-grey);
+
+   position: relative;
+   bottom: 0.4375rem;
+
+   margin: 0;
+   width: 27.125rem;
+}

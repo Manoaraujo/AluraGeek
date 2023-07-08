@@ -1,0 +1,9 @@
+.footer__content {
+   display: flex;
+   background: var(--light-blue);
+   padding: 2rem;
+
+   gap: 1rem;
+   width: 44rem;
+   height: 18.75rem;
+}

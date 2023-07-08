@@ -1,0 +1,8 @@
+.footer__container {
+   background: var(--light-blue);
+
+   box-sizing: border-box;
+
+   width: 100vw;
+   height: 22.75rem;
+}

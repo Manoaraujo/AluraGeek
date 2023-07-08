@@ -1,0 +1,14 @@
+.footer__developer-container {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+
+   background: var(--white);
+   padding: 0;
+   height: 6.375rem;
+   width: 100vw;
+}
+.footer__developer-text {
+   text-align: center;
+   font-weight: 500;
+}
