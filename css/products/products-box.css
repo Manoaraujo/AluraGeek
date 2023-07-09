@@ -8,3 +8,10 @@
    width: 44rem;
    height: 15.75rem;
 }
+@media screen and (max-width: 426px) {
+   .products__box {
+      width: 20.5rem;
+      flex-wrap: wrap;
+      justify-content: unset;
+   }
+}

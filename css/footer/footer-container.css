@@ -6,3 +6,9 @@
    width: 100vw;
    height: 22.75rem;
 }
+
+@media screen and (max-width: 426px) {
+   .footer__container {
+      height: 34.5625rem;
+   }
+}

@@ -9,3 +9,16 @@
    width: 100vw;
    height: 22.375rem;
 }
+@media screen and (max-width: 426px) {
+   .products__container {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+
+      padding: 1rem;
+      gap: 1rem;
+
+      width: 100vw;
+      height: 36.75rem;
+   }
+}

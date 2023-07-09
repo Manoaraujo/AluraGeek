@@ -10,3 +10,9 @@
       display: none;
    }
 }
+
+@media screen and (max-width: 426px) {
+   .products__items {
+      width: 9.75rem;
+   }
+}

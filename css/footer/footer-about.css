@@ -1,6 +1,6 @@
 .footer__about {
    display: grid;
-   grid-template-rows: 1fr 1fr;
+   grid-template-rows: 1fr 4fr;
    gap: 1rem;
    width: 15.875rem;
 }
@@ -14,4 +14,16 @@
    text-decoration: none;
    color: var(--grey);
    font-weight: 500;
+}
+
+@media screen and (max-width: 426px) {
+   .footer__about {
+      justify-items: center;
+      height: 16.25rem;
+      width: 20.5rem;
+   }
+   .footer__about-list {
+      align-items: center;
+      gap: 1rem;
+   }
 }

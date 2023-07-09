@@ -5,3 +5,8 @@
 
    width: 44rem;
 }
+@media screen and (max-width: 426px) {
+   .products__headline {
+      width: 20.5rem;
+   }
+}

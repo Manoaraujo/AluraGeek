@@ -12,3 +12,11 @@
    text-align: center;
    font-weight: 500;
 }
+@media screen and (max-width: 426px) {
+   .footer__developer-container {
+      box-sizing: border-box;
+      padding: 0;
+      height: 6.375rem;
+      /* width: 100vw; */
+   }
+}

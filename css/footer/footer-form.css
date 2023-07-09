@@ -20,3 +20,13 @@ textarea:focus {
    margin: 0;
    width: 27.125rem;
 }
+@media screen and (max-width: 426px) {
+   .footer__form {
+      justify-items: center;
+      height: 14.3125rem;
+      width: 20.5rem;
+   }
+   .footer__form-line {
+      width: 20.5rem;
+   }
+}
