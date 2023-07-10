@@ -12,11 +12,17 @@
 }
 @media screen and (max-width: 426px) {
    .header__container {
-      gap: 16px;
+      gap: 1rem;
       padding: 1rem;
+      justify-content: center;
    }
 
    .header__hidden {
       display: flex;
+   }
+}
+@media screen and (min-width: 729px) {
+   .header__container {
+      justify-content: center;
    }
 }

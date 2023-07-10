@@ -6,7 +6,6 @@
    padding: 2rem;
    gap: 1rem;
 
-   width: 100vw;
    height: 22.375rem;
 }
 @media screen and (max-width: 426px) {
@@ -20,5 +19,10 @@
 
       width: 100vw;
       height: 36.75rem;
+   }
+}
+@media screen and (min-width: 729px) {
+   .products__container {
+      align-items: center;
    }
 }

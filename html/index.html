@@ -67,22 +67,24 @@
    <body>
       <header class="header__container">
          <div class="header__box">
+            <div class="header__box-left">
+               <img
+                  src="../../assets/img/Logo.png"
+                  alt="alurageek logo"
+                  class="header__logo"
+               />
+               <input
+                  placeholder="O que deseja encontrar?"
+                  type="text"
+                  class="header__search-box"
+               />
+            </div>
+            <button class="header__button">Login</button>
             <img
-               src="../../assets/img/Logo.png"
-               alt="alurageek logo"
-               class="header__logo"
-            />
-            <input
-               placeholder="O que deseja encontrar?"
-               type="text"
-               class="header__search-box"
+               class="header__magnifier header__hidden"
+               src="../assets/img/magnify-logo.svg"
             />
          </div>
-         <button class="header__button">Login</button>
-         <img
-            class="header__magnifier header__hidden"
-            src="../assets/img/magnify-logo.svg"
-         />
       </header>
       <main>
          <!-- -----BANNER----- -->
@@ -190,7 +192,7 @@
                </a>
             </div>
             <div class="products__box">
-               <div class="products__items">
+               <div class="products__items" data-products>
                   <img
                      src="../assets/img/console/joystick.png"
                      alt=""

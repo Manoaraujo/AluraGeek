@@ -15,3 +15,10 @@
       width: 20.375rem;
    }
 }
+@media screen and (min-width: 729px) {
+   .banner__box {
+      gap: 1rem;
+      height: 10.625rem;
+      width: 71rem;
+   }
+}

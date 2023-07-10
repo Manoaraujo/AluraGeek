@@ -1,13 +1,29 @@
 .header__box {
    display: flex;
    align-items: center;
+   justify-content: space-between;
+}
+
+.header__box-left {
+   display: flex;
+   align-items: center;
    gap: 2rem;
 
    height: 2.5rem;
    width: 25.25rem;
 }
 @media screen and (max-width: 426px) {
-   .header__box {
+   .header__box-left {
       width: 6.25rem;
+   }
+
+   .header__box {
+      gap: 1rem;
+   }
+}
+
+@media screen and (min-width: 729px) {
+   .header__box {
+      width: 71rem;
    }
 }

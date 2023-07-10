@@ -6,7 +6,6 @@
    background: var(--white);
    padding: 0;
    height: 6.375rem;
-   width: 100vw;
 }
 .footer__developer-text {
    text-align: center;
