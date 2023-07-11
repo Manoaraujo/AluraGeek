@@ -1,0 +1,7 @@
+.login__title {
+   color: var(--grey);
+   font-family: Raleway;
+   font-size: 1rem;
+   font-weight: 700;
+   width: 6.5625rem;
+}

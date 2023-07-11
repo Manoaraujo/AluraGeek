@@ -1,0 +1,35 @@
+.login__field {
+   background: var(--white);
+   border-radius: 0.25rem;
+   border: none;
+   border-bottom: 0.1rem solid var(--medium-light-grey);
+
+   color: var(--grey);
+   font-family: var(--Raleway);
+   font-size: 1.1rem;
+
+   flex-shrink: 0;
+   box-sizing: border-box;
+   padding: 0rem 0.75rem;
+   height: 3.94544rem;
+   width: 26.4375rem;
+}
+
+.login__field::placeholder {
+   color: var(--medium-grey);
+   font-family: var(--Raleway);
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.25rem;
+   padding: 0rem 0.75rem;
+}
+@media screen and (max-width: 769px) {
+   .login__field {
+      padding-top: 8px;
+      width: 17.1875rem;
+   }
+   .login__field::placeholder {
+      padding: 0;
+   }
+}

@@ -1,6 +1,7 @@
 .footer__form-field {
    background: var(--white);
    border-radius: 0.25rem;
+   border-bottom: 0.1rem solid var(--medium-light-grey);
    display: flex;
    justify-content: center;
    flex-direction: column;
