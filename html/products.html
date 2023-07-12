@@ -1,362 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      <link rel="icon" type="image/png" href="../../assets/img/Logo.png" />
-
-      <!-- -----FONTS----- -->
-
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-         rel="stylesheet"
-      />
-
-      <!-- -----CSS----- -->
-
-      <link rel="stylesheet" href="../css/style.css" />
-      <link rel="stylesheet" href="../css/reset.css" />
-
-      <!-- -----HEADER----- -->
-
-      <link rel="stylesheet" href="../css/home/header/header-box.css" />
-      <link rel="stylesheet" href="../css/home/header/header-button.css" />
-      <link rel="stylesheet" href="../css/home/header/header-container.css" />
-      <link rel="stylesheet" href="../css/home/header/header-logo.css" />
-      <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
-
-      <!-- -----PRODUCTS----- -->
-
-      <link rel="stylesheet" href="../css/home/products/products-box.css" />
-      <link
-         rel="stylesheet"
-         href="../css/home/products/products-container.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/home/products/products-headline.css"
-      />
-      <link rel="stylesheet" href="../css/home/products/products-image.css" />
-      <link rel="stylesheet" href="../css/home/products/products-items.css" />
-      <link rel="stylesheet" href="../css/home/products/products-link.css" />
-      <link rel="stylesheet" href="../css/home/products/products-more.css" />
-      <link rel="stylesheet" href="../css/home/products/products-name.css" />
-      <link rel="stylesheet" href="../css/home/products/products-price.css" />
-      <link rel="stylesheet" href="../css/home/products/products-title.css" />
-
-      <!-- -----FOOTER----- -->
-      <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-container.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-content.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-form-button.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-form-field.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-form-label.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-form-title.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-form.css" />
-      <link rel="stylesheet" href="../css/home/footer/footer-logo.css" />
-
-      <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
-
-      <title>Alura Geek - Produtos</title>
-   </head>
-   <body>
-      <header class="header__container">
-         <div class="header__box">
-            <div class="header__box-left">
-               <img
-                  src="../../assets/img/Logo.png"
-                  alt="alurageek logo"
-                  class="header__logo"
-               />
-               <input
-                  placeholder="O que deseja encontrar?"
-                  type="text"
-                  class="header__search-box"
-               />
-            </div>
-            <button class="header__button">Login</button>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+   <link rel="icon" type="image/png" href="../../assets/img/Logo.png" />
+   
+   <!-- -----FONTS----- -->
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+   href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+   rel="stylesheet"
+   />
+   
+   <!-- -----CSS----- -->
+   
+   <link rel="stylesheet" href="../css/style.css" />
+   <link rel="stylesheet" href="../css/reset.css" />
+   
+   <!-- -----HEADER----- -->
+   
+   <link rel="stylesheet" href="../css/home/header/header-box.css" />
+   <link rel="stylesheet" href="../css/home/header/header-button.css" />
+   <link rel="stylesheet" href="../css/home/header/header-container.css" />
+   <link rel="stylesheet" href="../css/home/header/header-logo.css" />
+   <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
+   
+   <!-- -----PRODUCTS----- -->
+   
+   <link rel="stylesheet" href="../css/home/products/products-box.css" />
+   <link
+   rel="stylesheet"
+   href="../css/home/products/products-container.css"
+   />
+   <link
+   rel="stylesheet"
+   href="../css/home/products/products-headline.css"
+   />
+   <link rel="stylesheet" href="../css/home/products/products-image.css" />
+   <link rel="stylesheet" href="../css/home/products/products-items.css" />
+   <link rel="stylesheet" href="../css/home/products/products-link.css" />
+   <link rel="stylesheet" href="../css/home/products/products-more.css" />
+   <link rel="stylesheet" href="../css/home/products/products-name.css" />
+   <link rel="stylesheet" href="../css/home/products/products-price.css" />
+   <link rel="stylesheet" href="../css/home/products/products-title.css" />
+   
+   <link rel="stylesheet" href="../css/products/products-all.css" />
+   
+   <!-- -----FOOTER----- -->
+   <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-container.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-content.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-form-button.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-form-field.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-form-label.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-form-title.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-form.css" />
+   <link rel="stylesheet" href="../css/home/footer/footer-logo.css" />
+   
+   <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
+   
+   <title>Alura Geek - Produtos</title>
+</head>
+<body>
+   <header class="header__container">
+      <div class="header__box header__box-all">
+         <div class="header__box-left">
             <img
-               class="header__magnifier header__hidden"
-               src="../assets/img/magnify-logo.svg"
+            src="../../assets/img/Logo.png"
+            alt="alurageek logo"
+            class="header__logo"
+            />
+            <input
+            placeholder="O que deseja encontrar?"
+            type="text"
+            class="header__search-box"
             />
          </div>
-      </header>
-      <main>
-         <!-- -----STAR WARS----- -->
-
-         <section class="products__container">
-            <div class="products__headline">
-               <h4 class="products__title">Star Wars</h4>
-               <a class="products__more" href="">
-                  <p class="products__link">Ver tudo</p>
-                  <img
-                     src="../assets/img/arrow.svg"
-                     alt="arrow icon"
-                     class="products__arrow"
-                  />
-               </a>
+         
+         <img
+         class="header__magnifier header__hidden"
+         src="../assets/img/magnify-logo.svg"
+         />
+      </div>
+   </header>
+   <main>
+      <section class="products__container products__container-all">
+         <div class="products__headline-all">
+            <h4 class="products__title-all">Todos os produtos</h4>
+            <button class="products__button-add">Adicionar produto</button>
+         </div>
+         <div class="products__box-all">
+            <div class="products__items-all">
+               <img 
+               src="../assets/img/star_wars/stormtrooper-mug.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Caneca</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
             </div>
-            <div class="products__box">
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/stormtrooper-mug.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Caneca</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/imperial-helmets.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Capacetes imperais</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/yoda.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Yoda</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/stormtrooper.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Stormtrooper</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/star_wars/baby-yoda.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Baby Yoda</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/star_wars/kilo ren.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Kylo Ren</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/star_wars/imperial-helmets.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Capacetes imperais</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
             </div>
-         </section>
-
-         <!-- -----CONSOLE----- -->
-
-         <section class="products__container">
-            <div class="products__headline">
-               <h4 class="products__title">Consoles</h4>
-               <a class="products__more" href="">
-                  <p class="products__link">Ver tudo</p>
-                  <img
-                     src="../assets/img/arrow.svg"
-                     alt="arrow icon"
-                     class="products__arrow"
-                  />
-               </a>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/star_wars/yoda.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Yoda</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
             </div>
-            <div class="products__box">
-               <div class="products__items" data-products>
-                  <img
-                     src="../assets/img/console/joystick.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Controle Xbox</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/console/ps5.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">PS5</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/console/nintendo.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Nintendinho</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/console/switch.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Controle Switch</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/console/xbox.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Console Xbox</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/console/gameboy.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Game Boy Color</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/star_wars/stormtrooper.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Stormtrooper</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
             </div>
-         </section>
-
-         <!-- -----DIVERSOS----- -->
-
-         <section class="products__container">
-            <div class="products__headline">
-               <h4 class="products__title">Diversos</h4>
-               <a class="products__more" href="">
-                  <p class="products__link">Ver tudo</p>
-                  <img
-                     src="../assets/img/arrow.svg"
-                     alt="arrow icon"
-                     class="products__arrow"
-                  />
-               </a>
+            <div class="products__items-all ">
+               <img
+               src="../assets/img/star_wars/baby-yoda.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Baby Yoda</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
             </div>
-            <div class="products__box">
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/atari-shirt.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Camiseta Atari</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/snes-shirt.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Camiseta SNES</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/Skill-2.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Sonic</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/pink-radio.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Rádio</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/diversos/vr-googles.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Óculos VR</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/diversos/picachu.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Picachu</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
+            <div class="products__items-all ">
+               <img
+               src="../assets/img/star_wars/kilo ren.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Kylo Ren</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            
+            <div class="products__items-all" data-products>
+               <img
+               src="../assets/img/console/joystick.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Controle Xbox</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/console/ps5.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">PS5</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/console/nintendo.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Nintendinho</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/console/switch.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Controle Switch</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all ">
+               <img
+               src="../assets/img/console/xbox.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Console Xbox</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all ">
+               <img
+               src="../assets/img/console/gameboy.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Game Boy Color</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            
+            <div class="products__items-all">
+               <img
+               src="../assets/img/diversos/atari-shirt.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Camiseta Atari</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/diversos/snes-shirt.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Camiseta SNES</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/diversos/Skill-2.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Sonic</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all">
+               <img
+               src="../assets/img/diversos/pink-radio.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Rádio</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all ">
+               <img
+               src="../assets/img/diversos/vr-googles.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Óculos VR</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
+            </div>
+            <div class="products__items-all ">
+               <img
+               src="../assets/img/diversos/picachu.png"
+               alt=""
+               class="products__image-all"
+               />
+               <p class="products__name">Picachu</p>
+               <p class="products__price">R$ 60,00</p>
+               <a href="" class="products__link">Ver produto</a>
             </div>
          </section>
+         
+         
       </main>
       <footer class="footer__container">
          <section class="footer__content">
             <div class="footer__about">
                <img
-                  src="../assets/img/alurageek-logo.svg"
-                  alt="alurageek logo"
-                  class="footer__logo"
+               src="../assets/img/alurageek-logo.svg"
+               alt="alurageek logo"
+               class="footer__logo"
                />
-
+               
                <ul class="footer__about-list">
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                        >Quem somos nós</a
+                     >Quem somos nós</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                        >Política de privacidade</a
+                     >Política de privacidade</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                        >Programa fidelidade</a
+                     >Programa fidelidade</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                        >Nossas lojas</a
+                     >Nossas lojas</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                        >Quero ser franqueado</a
+                     >Quero ser franqueado</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                        >Anuncie aqui</a
+                     >Anuncie aqui</a
                      >
                   </li>
                </ul>
@@ -366,25 +326,31 @@
                <div class="footer__form-field">
                   <label class="footer__form-label" for="nome">nome</label>
                   <input
-                     id="nome"
-                     type="text"
-                     class="footer__form-field-text"
+                  name="name"
+                  id="nome"
+                  minlength="3"
+                  type="text"
+                  class="footer__form-field-text"
+                  required
                   />
                </div>
-               <hr class="footer__form-line" />
+               
                <div class="footer__form-field footer__form-field-message">
                   <label
-                     class="footer__form-label footer__form-label-message"
-                     for="message"
-                     >Escreva sua mensagem</label
+                  class="footer__form-label footer__form-label-message"
+                  for="message"
+                  >Escreva sua mensagem</label
                   >
                   <textarea
-                     id="message"
-                     type="text"
-                     class="footer__form-field-text footer__form-field-text-message"
+                  name="message"
+                  id="message"
+                  type="text"
+                  minlenght="2"
+                  class="footer__form-field-text footer__form-field-text-message"
+                  required
                   ></textarea>
                </div>
-               <hr class="footer__form-line" />
+               
                <button class="footer__form-button">Enviar mensagem</button>
             </form>
          </section>
@@ -395,4 +361,5 @@
          </section>
       </footer>
    </body>
-</html>
+   </html>
+   

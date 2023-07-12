@@ -2,6 +2,7 @@
    background-color: var(--white);
    border: 2px solid;
    border-color: var(--cyan);
+   cursor: pointer;
 
    color: var(--cyan);
    font-family: "Raleway", sans-serif;

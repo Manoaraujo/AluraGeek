@@ -1,4 +1,6 @@
 .products__container {
+   background: var(--light-grey);
+
    display: flex;
    flex-direction: column;
    box-sizing: border-box;

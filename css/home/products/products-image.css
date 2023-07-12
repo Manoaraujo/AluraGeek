@@ -1,4 +1,5 @@
 .products__image {
-   height: 100%;
-   width: 100%;
+   width: 11rem;
+   height: 10.875rem;
+   flex-shrink: 0;
 }
