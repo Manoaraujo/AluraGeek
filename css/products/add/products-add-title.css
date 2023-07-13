@@ -1,0 +1,7 @@
+.products__title-add {
+   color: var(--grey);
+   font-family: var(--Raleway);
+   font-size: 2rem;
+
+   font-weight: 700;
+}

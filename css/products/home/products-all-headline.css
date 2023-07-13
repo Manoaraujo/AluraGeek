@@ -1,0 +1,21 @@
+.products__headline-all {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+
+   width: 71rem;
+}
+@media screen and (max-width: 769px) {
+   .products__headline-all {
+      width: 45rem;
+   }
+}
+@media screen and (max-width: 426px) {
+   .products__headline-all {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+   }
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 769px) {
+   .products__items-all {
+      width: 10.25rem;
+      height: 13.875rem;
+      flex-shrink: 0;
+      align-self: stretch;
+   }
+}

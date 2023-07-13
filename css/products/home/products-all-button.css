@@ -1,0 +1,23 @@
+.products__button-add {
+   align-items: center;
+   background: var(--cyan);
+   border: none;
+   cursor: pointer;
+   display: flex;
+   padding: 1rem;
+   justify-content: center;
+
+   color: var(--white);
+   font-family: var(--Raleway);
+   font-size: 1rem;
+   font-weight: 400;
+}
+@media screen and (max-width: 426px) {
+   .products__button-add {
+      font-size: 0.875rem;
+      font-weight: 600;
+      gap: 0.625rem;
+      padding: 0.75rem 1rem;
+      width: 10.4375rem;
+   }
+}

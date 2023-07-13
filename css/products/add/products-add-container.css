@@ -1,0 +1,7 @@
+.products__container-add {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--light-grey);
+   /* height: 38.7rem; */
+}

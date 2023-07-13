@@ -1,0 +1,8 @@
+@media screen and (max-width: 426px) {
+   .header__box-all {
+      display: flex;
+      width: 22rem;
+      align-items: center;
+      justify-content: space-between;
+   }
+}

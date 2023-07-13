@@ -1,0 +1,13 @@
+.products__image-all {
+   width: 11rem;
+   height: 10.875rem;
+   flex-shrink: 0;
+}
+
+@media screen and (max-width: 426px) {
+   .products__image-all {
+      width: 10rem;
+
+      flex-shrink: 0;
+   }
+}

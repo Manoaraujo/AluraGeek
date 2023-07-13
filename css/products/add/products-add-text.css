@@ -1,0 +1,9 @@
+.products__text-add {
+   display: flex;
+   color: var(--grey);
+   font-family: var(--Raleway);
+   box-sizing: border-box;
+   padding: 0.5rem 0.75rem;
+   align-items: center;
+   border: none;
+}

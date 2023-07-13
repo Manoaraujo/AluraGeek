@@ -1,9 +1,6 @@
-// const botaoIniciarSecao = document.querySelector(["data-header-button"]);
+const botaoIniciarSecao = document.querySelector("[data-header-button]");
 
-// botaoIniciarSecao.addEventListener("click", () => {
-//    window.location.href = "../html/home-login.html";
-// });
-
-function teste() {
-   alert("teste");
-}
+botaoIniciarSecao.addEventListener("click", () => {
+   // alert("teste");
+   window.location.href = "./home-login.html";
+});

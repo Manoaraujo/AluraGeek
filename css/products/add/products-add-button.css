@@ -1,0 +1,15 @@
+.products__button-add {
+   color: var(--white);
+   font-family: var(--Raleway);
+   font-size: 1rem;
+   font-weight: 400;
+
+   background: var(--cyan);
+   border: none;
+   display: flex;
+   padding: 1rem;
+   justify-content: center;
+   align-items: center;
+   gap: 0.625rem;
+   align-self: stretch;
+}

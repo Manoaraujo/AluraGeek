@@ -30,10 +30,36 @@
 
       <!-- -----LOGIN----- -->
 
-      <link rel="stylesheet" href="../css/home-login/login-button.css" />
-      <link rel="stylesheet" href="../css/home-login/login-container.css" />
-      <link rel="stylesheet" href="../css/home-login/login-field.css" />
-      <link rel="stylesheet" href="../css/home-login/login-title.css" />
+      <link rel="stylesheet" href="../css/products/add/products-add-area.css" />
+
+      <link rel="stylesheet" href="../css/products/add/products-add-box.css" />
+
+      <link
+         rel="stylesheet"
+         href="../css/products/add/products-add-button.css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="../css/products/add/products-add-container.css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="../css/products/add/products-add-label.css"
+      />
+
+      <link
+         rel="stylesheet"
+         href="../css/products/add/products-add-message.css"
+      />
+
+      <link rel="stylesheet" href="../css/products/add/products-add-text.css" />
+
+      <link
+         rel="stylesheet"
+         href="../css/products/add/products-add-title.css"
+      />
 
       <!-- -----FOOTER----- -->
       <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
@@ -65,14 +91,49 @@
                   class="header__search-box"
                />
             </div>
-            <button class="header__button">Login</button>
+            <button class="header__button">Menu administrador</button>
             <img
                class="header__magnifier header__hidden"
                src="../assets/img/magnify-logo.svg"
             />
          </div>
       </header>
-      <main></main>
+      <main>
+         <section class="products__container products__container-add">
+            <div class="products__box products__box-add">
+               <h4 class="products__title-add">Adicionar novo produto</h4>
+               <div class="products__area-add">
+                  <label for="" class="products__label-add">URL da imagem</label
+                  ><input type="text" class="products__text-add" />
+               </div>
+               <div class="products__area-add">
+                  <label for="" class="products__label-add">Categoria</label
+                  ><input type="text" class="products__text-add" />
+               </div>
+               <div class="products__area-add">
+                  <label for="" class="products__label-add"
+                     >Nome do produto</label
+                  ><input type="text" class="products__text-add" />
+               </div>
+               <div class="products__area-add">
+                  <label for="" class="products__label-add"
+                     >Preço do produto</label
+                  ><input type="text" class="products__text-add" />
+               </div>
+               <div class="products__area-add">
+                  <label for="description" class="products__label-add"
+                     >Descrição do produto</label
+                  >
+                  <textarea
+                     name="description"
+                     id="description"
+                     class="products__text-add products__message-add"
+                  ></textarea>
+               </div>
+               <button class="products__button-add">Adicionar produto</button>
+            </div>
+         </section>
+      </main>
       <footer class="footer__container">
          <section class="footer__content">
             <div class="footer__about">
