@@ -1,9 +1,3 @@
 .products__message-add {
    resize: none;
 }
-body {
-   background: var(--light-grey);
-   display: flex;
-   gap: 4rem;
-   flex-direction: column;
-}

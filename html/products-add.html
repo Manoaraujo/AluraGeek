@@ -28,7 +28,7 @@
       <link rel="stylesheet" href="../css/home/header/header-logo.css" />
       <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
 
-      <!-- -----LOGIN----- -->
+      <!-- -----ADD ITEMS----- -->
 
       <link rel="stylesheet" href="../css/products/add/products-add-area.css" />
 
@@ -74,7 +74,7 @@
 
       <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
 
-      <title>Alura Geek - login</title>
+      <title>Alura Geek - Adicionar produtos</title>
    </head>
    <body>
       <header class="header__container">
@@ -103,22 +103,44 @@
             <div class="products__box products__box-add">
                <h4 class="products__title-add">Adicionar novo produto</h4>
                <div class="products__area-add">
-                  <label for="" class="products__label-add">URL da imagem</label
-                  ><input type="text" class="products__text-add" />
+                  <label for="url" class="products__label-add"
+                     >URL da imagem</label
+                  ><input
+                     id="url"
+                     name="url"
+                     type="url"
+                     class="products__text-add"
+                  />
                </div>
                <div class="products__area-add">
-                  <label for="" class="products__label-add">Categoria</label
-                  ><input type="text" class="products__text-add" />
+                  <label for="category" class="products__label-add"
+                     >Categoria</label
+                  ><input
+                     id="category"
+                     name="category"
+                     type="text"
+                     class="products__text-add"
+                  />
                </div>
                <div class="products__area-add">
-                  <label for="" class="products__label-add"
+                  <label for="name" class="products__label-add"
                      >Nome do produto</label
-                  ><input type="text" class="products__text-add" />
+                  ><input
+                     id="name"
+                     name="name"
+                     type="text"
+                     class="products__text-add"
+                  />
                </div>
                <div class="products__area-add">
-                  <label for="" class="products__label-add"
+                  <label for="price" class="products__label-add"
                      >Preço do produto</label
-                  ><input type="text" class="products__text-add" />
+                  ><input
+                     id="price"
+                     name="price"
+                     type="number"
+                     class="products__text-add"
+                  />
                </div>
                <div class="products__area-add">
                   <label for="description" class="products__label-add"
@@ -215,5 +237,6 @@
             </p>
          </section>
       </footer>
+      <script src="../JS/main.js" type="module"></script>
    </body>
 </html>

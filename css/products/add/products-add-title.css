@@ -5,3 +5,9 @@
 
    font-weight: 700;
 }
+
+@media screen and (max-width: 768px) {
+   .products__title-add {
+      font-size: 1.375rem;
+   }
+}

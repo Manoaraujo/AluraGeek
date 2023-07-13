@@ -1,7 +1,19 @@
+body {
+   background: var(--light-grey);
+   display: flex;
+   gap: 4rem;
+   flex-direction: column;
+}
+
 .products__container-add {
    display: flex;
    align-items: center;
    justify-content: center;
    background: var(--light-grey);
-   /* height: 38.7rem; */
+}
+
+@media screen and (max-width: 768px) {
+   body {
+      gap: 2rem;
+   }
 }

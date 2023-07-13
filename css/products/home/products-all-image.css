@@ -1,13 +1,28 @@
 .products__image-all {
-   width: 11rem;
+   /* position: relative; */
    height: 10.875rem;
+   width: 11rem;
+}
+
+.products__recicle {
+   position: relative;
+   top: 4.5rem;
+   left: 6.5rem;
+   width: 1.5rem;
+   height: 1.5rem;
+   flex-shrink: 0;
+}
+.products__pen {
+   position: relative;
+   top: 2.5rem;
+   left: 9rem;
+   width: 1.5rem;
+   height: 1.5rem;
    flex-shrink: 0;
 }
 
 @media screen and (max-width: 426px) {
    .products__image-all {
       width: 10rem;
-
-      flex-shrink: 0;
    }
 }

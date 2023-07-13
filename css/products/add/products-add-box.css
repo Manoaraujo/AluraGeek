@@ -5,3 +5,10 @@
    align-items: flex-start;
    gap: 1rem;
 }
+@media screen and (max-width: 768px) {
+   .products__box-add {
+      width: 445rem;
+      padding: 2rem;
+      box-sizing: border-box;
+   }
+}
