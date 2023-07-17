@@ -6,9 +6,15 @@ textarea:focus {
 .footer__form {
    display: flex;
    flex-direction: column;
-   gap: 0.5rem;
+   gap: 1.5rem;
    width: 27.125rem;
    height: 17.3125rem;
+}
+
+.error-message {
+   font-size: 0.8rem;
+   margin-top: 1rem;
+   color: red;
 }
 
 @media screen and (max-width: 426px) {

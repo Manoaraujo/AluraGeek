@@ -33,6 +33,7 @@
       <link rel="stylesheet" href="../css/home-login/login-button.css" />
       <link rel="stylesheet" href="../css/home-login/login-container.css" />
       <link rel="stylesheet" href="../css/home-login/login-field.css" />
+      <link rel="stylesheet" href="../css/home-login/login-form.css" />
       <link rel="stylesheet" href="../css/home-login/login-title.css" />
 
       <!-- -----FOOTER----- -->
@@ -54,18 +55,20 @@
       <header class="header__container">
          <div class="header__box">
             <div class="header__box-left">
-               <img
-                  src="../../assets/img/Logo.png"
-                  alt="alurageek logo"
-                  class="header__logo"
-               />
+               <a href="./home.html" target="_blank">
+                  <img
+                     src="../../assets/img/Logo.png"
+                     alt="alurageek logo"
+                     class="header__logo"
+                  />
+               </a>
                <input
                   placeholder="O que deseja encontrar?"
                   type="text"
                   class="header__search-box"
                />
             </div>
-            <button class="header__button">Login</button>
+
             <img
                class="header__magnifier header__hidden"
                src="../assets/img/magnify-logo.svg"
@@ -75,27 +78,51 @@
       <main>
          <section class="login__container">
             <h4 class="login__title">Iniciar Sessão</h4>
-            <input
-               type="email"
-               placeholder="Escreva seu email"
-               class="login__field login__field-email"
-            />
-            <input
-               type="password"
-               placeholder="Escreva sua senha"
-               class="login__field login__field-password"
-            />
-            <button class="login__button">Entrar</button>
+            <form class="login__form" type="submit">
+               <fieldset class="login__field">
+                  <input
+                     name="email"
+                     id="email"
+                     type="email"
+                     placeholder="Escreva seu email"
+                     minlength="5"
+                     class="login__field login__field-email"
+                     required
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="login__field">
+                  <input
+                     name="password"
+                     id="password"
+                     type="password"
+                     placeholder="Escreva sua senha"
+                     minlength="8"
+                     class="login__field login__field-password"
+                     required
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <input
+                  value="Entrar"
+                  class="login__button"
+                  id="enviar"
+                  type="submit"
+                  data-button-login
+               />
+            </form>
          </section>
       </main>
       <footer class="footer__container">
          <section class="footer__content">
             <div class="footer__about">
-               <img
-                  src="../assets/img/alurageek-logo.svg"
-                  alt="alurageek logo"
-                  class="footer__logo"
-               />
+               <a href="#">
+                  <img
+                     src="../assets/img/alurageek-logo.svg"
+                     alt="alurageek logo"
+                     class="footer__logo"
+                  />
+               </a>
 
                <ul class="footer__about-list">
                   <li class="footer__about-list-item">
@@ -130,21 +157,22 @@
                   </li>
                </ul>
             </div>
-            <form class="footer__form" action="submit">
+            <form class="footer__form" action="submit" data-form>
                <p class="footer__form-title">Fale conosco</p>
-               <div class="footer__form-field">
+               <fieldset class="footer__form-field">
                   <label class="footer__form-label" for="nome">nome</label>
                   <input
                      name="name"
                      id="nome"
+                     maxlength="40"
                      minlength="3"
                      type="text"
                      class="footer__form-field-text"
                      required
                   />
-               </div>
-
-               <div class="footer__form-field footer__form-field-message">
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="footer__form-field footer__form-field-message">
                   <label
                      class="footer__form-label footer__form-label-message"
                      for="message"
@@ -154,13 +182,17 @@
                      name="message"
                      id="message"
                      type="text"
+                     maxlength="120"
                      minlenght="2"
                      class="footer__form-field-text footer__form-field-text-message"
                      required
                   ></textarea>
-               </div>
+                  <span class="error-message"></span>
+               </fieldset>
 
-               <button class="footer__form-button">Enviar mensagem</button>
+               <button type="submit" class="footer__form-button">
+                  Enviar mensagem
+               </button>
             </form>
          </section>
          <section class="footer__developer-container">

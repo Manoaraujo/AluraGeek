@@ -1,5 +1,6 @@
 .products__button-add {
    align-items: center;
+   text-decoration: none;
    background: var(--cyan);
    border: none;
    cursor: pointer;

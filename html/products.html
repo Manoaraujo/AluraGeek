@@ -47,14 +47,15 @@
    <link rel="stylesheet" href="../css/home/products/products-price.css" />
    <link rel="stylesheet" href="../css/home/products/products-title.css" />
    
-   <link rel="stylesheet" href="../css/products/home/products-all-box.css" />
-   <link rel="stylesheet" href="../css/products/home/products-all-button.css" />
-   <link rel="stylesheet" href="../css/products/home/products-all-container.css" />
-   <link rel="stylesheet" href="../css/products/home/products-all-headline.css" />
-   <link rel="stylesheet" href="../css/products/home/products-all-header.css" />
-   <link rel="stylesheet" href="../css/products/home/products-all-image.css" />
-   <link rel="stylesheet" href="../css/products/home/products-all-items.css" />
-   <link rel="stylesheet" href="../css/products/home/products-all-title.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-box.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-button.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-container.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-header.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-headline.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-image.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-items.css" />
+   <link rel="stylesheet" href="../css/products-all/products-all-title.css" />
+   
    
    <!-- -----FOOTER----- -->
    <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
@@ -75,11 +76,13 @@
    <header class="header__container">
       <div class="header__box header__box-all">
          <div class="header__box-left">
-            <img
-            src="../../assets/img/Logo.png"
-            alt="alurageek logo"
-            class="header__logo"
-            />
+            <a href="./home.html" target="_blank">
+               <img
+               src="../../assets/img/Logo.png"
+               alt="alurageek logo"
+               class="header__logo"
+               />
+            </a>
             <input
             placeholder="O que deseja encontrar?"
             type="text"
@@ -97,7 +100,9 @@
       <section class="products__container products__container-all">
          <div class="products__headline-all">
             <h4 class="products__title-all">Todos os produtos</h4>
-            <button class="products__button-add">Adicionar produto</button>
+            <a class="products__button-add-link" href="./products-add.html" target="_blank" >
+            <button  class="products__button-add" data-button-add>Adicionar produto</button>
+            </a>
          </div>
          <div class="products__box-all">
             <div class="products__items-all">
@@ -200,7 +205,7 @@
                <a href="" class="products__link">Ver produto</a>
             </div>
             <div class="products__items-all">
-              <div class="products__image-box">
+               <div class="products__image-box">
                   <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
                   <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
                   <img 
@@ -361,11 +366,13 @@
       <footer class="footer__container">
          <section class="footer__content">
             <div class="footer__about">
-               <img
-               src="../assets/img/alurageek-logo.svg"
-               alt="alurageek logo"
-               class="footer__logo"
-               />
+               <a href="#">
+                  <img
+                  src="../assets/img/alurageek-logo.svg"
+                  alt="alurageek logo"
+                  class="footer__logo"
+                  />
+               </a>
                
                <ul class="footer__about-list">
                   <li class="footer__about-list-item">
@@ -400,21 +407,22 @@
                   </li>
                </ul>
             </div>
-            <form class="footer__form" action="submit">
+            <form class="footer__form" action="submit" data-form>
                <p class="footer__form-title">Fale conosco</p>
-               <div class="footer__form-field">
+               <fieldset class="footer__form-field">
                   <label class="footer__form-label" for="nome">nome</label>
                   <input
                   name="name"
                   id="nome"
+                  maxlength="40"
                   minlength="3"
                   type="text"
                   class="footer__form-field-text"
                   required
                   />
-               </div>
-               
-               <div class="footer__form-field footer__form-field-message">
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="footer__form-field footer__form-field-message">
                   <label
                   class="footer__form-label footer__form-label-message"
                   for="message"
@@ -424,13 +432,17 @@
                   name="message"
                   id="message"
                   type="text"
+                  maxlength="120"
                   minlenght="2"
                   class="footer__form-field-text footer__form-field-text-message"
                   required
                   ></textarea>
-               </div>
+                  <span class="error-message"></span>
+               </fieldset>
                
-               <button class="footer__form-button">Enviar mensagem</button>
+               <button type="submit" class="footer__form-button">
+                  Enviar mensagem
+               </button>
             </form>
          </section>
          <section class="footer__developer-container">
@@ -439,6 +451,7 @@
             </p>
          </section>
       </footer>
+      <script src="../JS/main.js" type="module"></script>
    </body>
    </html>
    

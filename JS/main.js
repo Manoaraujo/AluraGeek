@@ -1,12 +1,84 @@
-// const loginButton = document.querySelector("[data-header-button]");
+// -----FORM SEND MESSAGE-----
 
-// loginButton.addEventListener("click", () => {
-//    window.location.href = "./home-login.html";
-// });
+const form = document.querySelector("[data-form]");
 
-const addItemButton = document.querySelector(".products__button-add");
+form.addEventListener("submit", (e) => {
+   e.preventDefault();
 
-addItemButton.addEventListener("click", () => {
-   console.log("test");
-   window.location.href = "./products-add.html";
+   const answerList = {
+      nome: e.target.elements["name"].value,
+      message: e.target.elements["message"].value,
+   };
+
+   const params = new URLSearchParams();
+   params.append("subject", answerList.assunto);
+   params.append(
+      "body",
+      `      Nome: ${answerList.name}
+      Mensagem: ${answerList.message}`
+   );
+
+   const mailtoLink = `mailto:contato@alurageek.com?${params
+      .toString()
+      .replaceAll("+", " ")}`;
+
+   window.location.href = mailtoLink;
 });
+
+// -----VALIDATION-----
+
+const formFields = document.querySelectorAll("[required]");
+
+formFields.forEach((field) => {
+   field.addEventListener("blur", () => checkField(field));
+   field.addEventListener("invalid", (event) => event.preventDefault());
+});
+
+const errorTypes = [
+   "valueMissing",
+   "typeMismatch",
+   "patternMismatch",
+   "tooShort",
+   "customError",
+];
+
+const errorMessages = {
+   name: {
+      valueMissing: "O field de nome não pode estar vazio.",
+      patternMismatch: "Por favor, preencha um nome válido.",
+      tooShort: "Por favor, preencha um nome válido.",
+   },
+
+   message: {
+      valueMissing: "O field pode estar vazio.",
+      tooShort: "O field não tem caracteres suficientes.",
+   },
+   email: {
+      valueMissing: "O field de e-mail não pode estar vazio.",
+      typeMismatch: "Por favor, preencha um email válido.",
+      tooShort: "Por favor, preencha um e-mail válido.",
+   },
+   password: {
+      valueMissing: "O field de senha não pode estar vazio.",
+      tooShort: "A senha está muito curta",
+   },
+};
+
+function checkField(field) {
+   let message = "";
+   field.setCustomValidity("");
+   errorTypes.forEach((error) => {
+      if (field.validity[error]) {
+         message = errorMessages[field.name][error];
+      }
+   });
+
+   const errorMessageField = field.parentNode.querySelector(".error-message");
+   const inputValidityChecker = field.checkValidity();
+
+   if (!inputValidityChecker) {
+      errorMessageField.textContent = message;
+   } else {
+      errorMessageField.textContent = "";
+   }
+}

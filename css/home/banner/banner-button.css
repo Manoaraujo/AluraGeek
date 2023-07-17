@@ -2,7 +2,9 @@
    border: none;
 
    background-color: var(--cyan);
+   cursor: pointer;
 
+   text-decoration: none;
    color: var(--white);
    font-size: 0.875;
    font-weight: 600;
