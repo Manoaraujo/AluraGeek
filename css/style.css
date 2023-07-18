@@ -14,3 +14,10 @@
 
    font-family: var(--Raleway);
 }
+
+.error-message {
+   font-size: 0.65rem;
+   padding: 0.15rem;
+   margin-top: 0.5rem;
+   color: red;
+}

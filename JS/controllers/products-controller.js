@@ -3,7 +3,7 @@ const products = document.querySelector("[data-product]");
 
 export default function card(name, imageUrl, price, id) {
    const showProduct = document.createElement("div");
-   showProduct.className = "products__items";
+   showProduct.className = "products__items ";
    showProduct.innerHTML = `
    <img   src="${imageUrl}"  alt="" class="products__image"
    />
@@ -29,32 +29,3 @@ async function productsOnScreen() {
 }
 
 productsOnScreen();
-
-// ---ADD NEW ITEM ---
-
-const addForm = document.querySelector("[data-add-product]");
-
-async function postProduct(event) {
-   event.preventDefault();
-
-   const imageUrl = document.querySelector("[data-add-url]").value;
-   const category = document.querySelector("[data-add-category]").value;
-   const name = document.querySelector("[data-add-name]").value;
-   const price = parseInt(document.querySelector("[data-add-price]").value);
-   const description = document.querySelector("[data-add-description]").value;
-
-   try {
-      await productServices.addProduct(
-         imageUrl,
-         category,
-         name,
-         price,
-         description
-      );
-      window.location.href = "../html/home.html";
-   } catch (e) {
-      alert(e);
-   }
-}
-
-addForm.addEventListener("submit", (event) => postProduct(event));

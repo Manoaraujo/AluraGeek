@@ -106,10 +106,12 @@
                      id="url"
                      name="url"
                      type="url"
+                     minlength="3"
                      class="products__text-add"
                      required
                      data-add-url
                   />
+                  <span class="error-message"></span>
                </div>
 
                <div class="products__area-add">
@@ -120,22 +122,28 @@
                      name="category"
                      type="text"
                      class="products__text-add"
+                     minlength="3"
                      required
                      data-add-category
                   />
+                  <span class="error-message"></span>
                </div>
+
                <div class="products__area-add">
                   <label for="name" class="products__label-add"
                      >Nome do produto</label
                   ><input
-                     id="name"
+                     id="itemName"
                      name="name"
                      type="text"
                      class="products__text-add"
+                     minlength="3"
                      required
                      data-add-name
                   />
+                  <span class="error-message"></span>
                </div>
+
                <div class="products__area-add">
                   <label for="price" class="products__label-add"
                      >Preço do produto</label
@@ -147,6 +155,7 @@
                      required
                      data-add-price
                   />
+                  <span class="error-message"></span>
                </div>
 
                <div class="products__area-add">
@@ -160,6 +169,7 @@
                      required
                      data-add-description
                   ></textarea>
+                  <span class="error-message"></span>
                </div>
 
                <input
@@ -260,7 +270,7 @@
       </footer>
       <script src="../JS/main.js" type="module"></script>
       <script
-         src="../JS/controllers/products-controller.js"
+         src="../JS/controllers/products-add-item.js"
          type="module"
       ></script>
    </body>

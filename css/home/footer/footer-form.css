@@ -11,12 +11,6 @@ textarea:focus {
    height: 17.3125rem;
 }
 
-.error-message {
-   font-size: 0.8rem;
-   margin-top: 1rem;
-   color: red;
-}
-
 @media screen and (max-width: 426px) {
    .footer__form {
       justify-items: center;

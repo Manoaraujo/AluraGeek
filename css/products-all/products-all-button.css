@@ -13,6 +13,9 @@
    font-size: 1rem;
    font-weight: 400;
 }
+.products__button-add-link {
+   text-decoration: none;
+}
 @media screen and (max-width: 426px) {
    .products__button-add {
       font-size: 0.875rem;

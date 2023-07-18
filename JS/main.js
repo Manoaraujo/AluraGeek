@@ -44,23 +44,46 @@ const errorTypes = [
 
 const errorMessages = {
    name: {
-      valueMissing: "O field de nome não pode estar vazio.",
+      valueMissing: "O campo de nome não pode estar vazio.",
       patternMismatch: "Por favor, preencha um nome válido.",
       tooShort: "Por favor, preencha um nome válido.",
    },
 
    message: {
-      valueMissing: "O field pode estar vazio.",
-      tooShort: "O field não tem caracteres suficientes.",
+      valueMissing: "O campo não pode estar vazio.",
+      tooShort: "O campo não tem caracteres suficientes.",
    },
    email: {
-      valueMissing: "O field de e-mail não pode estar vazio.",
+      valueMissing: "O campo de e-mail não pode estar vazio.",
       typeMismatch: "Por favor, preencha um email válido.",
       tooShort: "Por favor, preencha um e-mail válido.",
    },
    password: {
-      valueMissing: "O field de senha não pode estar vazio.",
+      valueMissing: "O campo de senha não pode estar vazio.",
       tooShort: "A senha está muito curta",
+   },
+   itemName: {
+      valueMissing: "O campo não pode estar vazio.",
+      patternMismatch: "Por favor, preencha um nome válido.",
+      tooShort: "Por favor, preencha um nome válido.",
+   },
+   url: {
+      valueMissing: "O campo não pode estar vazio.",
+      patternMismatch: "Por favor, preencha um endereço válido.",
+      tooShort: "Muito curto. Por favor, preencha um endereço válido.",
+   },
+   category: {
+      valueMissing: "O campo não pode estar vazio.",
+      patternMismatch: "Por favor, preencha um nome válido.",
+      tooShort: "Muito curto. Por favor, preencha um nome válido.",
+   },
+   price: {
+      valueMissing: "O campo não pode estar vazio.",
+      patternMismatch: "Por favor, preencha um valor válido.",
+   },
+   description: {
+      valueMissing: "O campo não pode estar vazio.",
+      tooShort: "Muito curto. Por favor, preencha um nome válido.",
    },
 };
 
