@@ -95,18 +95,23 @@
       </header>
       <main>
          <section class="products__container products__container-add">
-            <div class="products__box products__box-add">
+            <form class="products__box products__box-add" data-add-product>
                <h4 class="products__title-add">Adicionar novo produto</h4>
+
                <div class="products__area-add">
                   <label for="url" class="products__label-add"
                      >URL da imagem</label
-                  ><input
+                  >
+                  <input
                      id="url"
                      name="url"
                      type="url"
                      class="products__text-add"
+                     required
+                     data-add-url
                   />
                </div>
+
                <div class="products__area-add">
                   <label for="category" class="products__label-add"
                      >Categoria</label
@@ -115,6 +120,8 @@
                      name="category"
                      type="text"
                      class="products__text-add"
+                     required
+                     data-add-category
                   />
                </div>
                <div class="products__area-add">
@@ -125,6 +132,8 @@
                      name="name"
                      type="text"
                      class="products__text-add"
+                     required
+                     data-add-name
                   />
                </div>
                <div class="products__area-add">
@@ -135,8 +144,11 @@
                      name="price"
                      type="number"
                      class="products__text-add"
+                     required
+                     data-add-price
                   />
                </div>
+
                <div class="products__area-add">
                   <label for="description" class="products__label-add"
                      >Descrição do produto</label
@@ -145,10 +157,17 @@
                      name="description"
                      id="description"
                      class="products__text-add products__message-add"
+                     required
+                     data-add-description
                   ></textarea>
                </div>
-               <button class="products__button-add">Adicionar produto</button>
-            </div>
+
+               <input
+                  value="Adicionar produto"
+                  type="submit"
+                  class="products__button-add"
+               />
+            </form>
          </section>
       </main>
       <footer class="footer__container">
@@ -240,5 +259,9 @@
          </section>
       </footer>
       <script src="../JS/main.js" type="module"></script>
+      <script
+         src="../JS/controllers/products-controller.js"
+         type="module"
+      ></script>
    </body>
 </html>
