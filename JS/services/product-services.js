@@ -45,7 +45,25 @@ async function addProduct(imageUrl, category, name, price, description) {
    return productsListConverted;
 }
 
+async function deleteProduct(id) {
+   const connection = await fetch(
+      `https://64b5bca0f3dbab5a95c79f73.mockapi.io/products/${id}`,
+      {
+         method: "DELETE",
+      }
+   );
+
+   if (!connection.ok) {
+      throw new Error("Não foi possível apagar o produto.");
+   }
+
+   window.location.href = "../html/products.html";
+   const productsListConverted = await connection.json();
+   return productsListConverted;
+}
+
 export const productServices = {
    getProductList,
    addProduct,
+   deleteProduct,
 };

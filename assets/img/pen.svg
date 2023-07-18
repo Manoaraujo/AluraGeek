@@ -1,10 +1,12 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="edit_black_24dp 1" clip-path="url(#clip0_55_1493)">
-<path id="Vector" d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#2A7AE4;stroke-width:0.5669;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M17.7,3c0.3,0,0.5,0.1,0.7,0.3l2.3,2.3c0.4,0.4,0.4,1,0,1.4l-1.8,1.8L15.1,5L17,3.3C17.2,3.1,17.4,3,17.7,3"/>
+	<polyline class="st0" points="14.1,6.2 17.8,10 6.8,21 3,21 3,17.3 14.1,6.2 	"/>
 </g>
-<defs>
-<clipPath id="clip0_55_1493">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>
 </svg>

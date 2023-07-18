@@ -1,408 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-   <link rel="icon" type="image/png" href="../../assets/img/Logo.png" />
-   
-   <!-- -----FONTS----- -->
-   
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-   href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-   rel="stylesheet"
-   />
-   
-   <!-- -----CSS----- -->
-   
-   <link rel="stylesheet" href="../css/style.css" />
-   <link rel="stylesheet" href="../css/reset.css" />
-   
-   <!-- -----HEADER----- -->
-   
-   <link rel="stylesheet" href="../css/home/header/header-box.css" />
-   <link rel="stylesheet" href="../css/home/header/header-button.css" />
-   <link rel="stylesheet" href="../css/home/header/header-container.css" />
-   <link rel="stylesheet" href="../css/home/header/header-logo.css" />
-   <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
-   
-   <!-- -----PRODUCTS----- -->
-   
-   <link rel="stylesheet" href="../css/home/products/products-box.css" />
-   <link
-   rel="stylesheet"
-   href="../css/home/products/products-container.css"
-   />
-   <link
-   rel="stylesheet"
-   href="../css/home/products/products-headline.css"
-   />
-   <link rel="stylesheet" href="../css/home/products/products-image.css" />
-   <link rel="stylesheet" href="../css/home/products/products-items.css" />
-   <link rel="stylesheet" href="../css/home/products/products-link.css" />
-   <link rel="stylesheet" href="../css/home/products/products-more.css" />
-   <link rel="stylesheet" href="../css/home/products/products-name.css" />
-   <link rel="stylesheet" href="../css/home/products/products-price.css" />
-   <link rel="stylesheet" href="../css/home/products/products-title.css" />
-   
-   <link rel="stylesheet" href="../css/products-all/products-all-box.css" />
-   <link rel="stylesheet" href="../css/products-all/products-all-button.css" />
-   <link rel="stylesheet" href="../css/products-all/products-all-container.css" />
-   <link rel="stylesheet" href="../css/products-all/products-all-header.css" />
-   <link rel="stylesheet" href="../css/products-all/products-all-headline.css" />
-   <link rel="stylesheet" href="../css/products-all/products-all-image.css" />
-   <link rel="stylesheet" href="../css/products-all/products-all-items.css" />
-   <link rel="stylesheet" href="../css/products-all/products-all-title.css" />
-   
-   
-   <!-- -----FOOTER----- -->
-   <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-container.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-content.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-form-button.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-form-field.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-form-label.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-form-title.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-form.css" />
-   <link rel="stylesheet" href="../css/home/footer/footer-logo.css" />
-   
-   <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
-   
-   <title>Alura Geek - Produtos</title>
-</head>
-<body>
-   <header class="header__container">
-      <div class="header__box header__box-all">
-         <div class="header__box-left">
-            <a href="./home.html" target="_blank">
-               <img
-               src="../../assets/img/Logo.png"
-               alt="alurageek logo"
-               class="header__logo"
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="icon" type="image/png" href="../../assets/img/Logo.png" />
+
+      <!-- -----FONTS----- -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- -----CSS----- -->
+
+      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/reset.css" />
+
+      <!-- -----HEADER----- -->
+
+      <link rel="stylesheet" href="../css/home/header/header-box.css" />
+      <link rel="stylesheet" href="../css/home/header/header-button.css" />
+      <link rel="stylesheet" href="../css/home/header/header-container.css" />
+      <link rel="stylesheet" href="../css/home/header/header-logo.css" />
+      <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
+
+      <!-- -----PRODUCTS----- -->
+
+      <link rel="stylesheet" href="../css/home/products/products-box.css" />
+      <link
+         rel="stylesheet"
+         href="../css/home/products/products-container.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/home/products/products-headline.css"
+      />
+      <link rel="stylesheet" href="../css/home/products/products-image.css" />
+      <link rel="stylesheet" href="../css/home/products/products-items.css" />
+      <link rel="stylesheet" href="../css/home/products/products-link.css" />
+      <link rel="stylesheet" href="../css/home/products/products-more.css" />
+      <link rel="stylesheet" href="../css/home/products/products-name.css" />
+      <link rel="stylesheet" href="../css/home/products/products-price.css" />
+      <link rel="stylesheet" href="../css/home/products/products-title.css" />
+
+      <link rel="stylesheet" href="../css/products-all/products-all-box.css" />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-button.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-container.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-header.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-headline.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-image.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-items.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-title.css"
+      />
+
+      <!-- -----FOOTER----- -->
+      <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-container.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-content.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-button.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-field.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-label.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-title.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-logo.css" />
+
+      <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
+
+      <title>Alura Geek - Produtos</title>
+   </head>
+   <body>
+      <header class="header__container">
+         <div class="header__box header__box-all">
+            <div class="header__box-left">
+               <a href="./home.html" target="_blank">
+                  <img
+                     src="../../assets/img/Logo.png"
+                     alt="alurageek logo"
+                     class="header__logo"
+                  />
+               </a>
+               <input
+                  placeholder="O que deseja encontrar?"
+                  type="text"
+                  class="header__search-box"
                />
-            </a>
-            <input
-            placeholder="O que deseja encontrar?"
-            type="text"
-            class="header__search-box"
+            </div>
+
+            <img
+               class="header__magnifier header__hidden"
+               src="../assets/img/magnify-logo.svg"
             />
          </div>
-         
-         <img
-         class="header__magnifier header__hidden"
-         src="../assets/img/magnify-logo.svg"
-         />
-      </div>
-   </header>
-   <main>
-      <section class="products__container products__container-all">
-         <div class="products__headline-all">
-            <h4 class="products__title-all">Todos os produtos</h4>
-            <a class="products__button-add-link" href="./products-add.html" target="_blank" >
-            <button  class="products__button-add" data-button-add>Adicionar produto</button>
-            </a>
-         </div>
-         <div class="products__box-all">
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/star_wars/stormtrooper-mug.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Caneca</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
+      </header>
+      <main>
+         <section class="products__container products__container-all">
+            <div class="products__headline-all">
+               <h4 class="products__title-all">Todos os produtos</h4>
+               <a
+                  class="products__button-add-link"
+                  href="./products-add.html"
+                  target="_blank"
+               >
+                  <button class="products__button-add" data-button-add>
+                     Adicionar produto
+                  </button>
+               </a>
             </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/star_wars/imperial-helmets.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Capacetes imperais</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/star_wars/yoda.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Yoda</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/star_wars/stormtrooper.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Stormtrooper</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all ">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/star_wars/baby-yoda.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Baby Yoda</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all ">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/star_wars/kilo ren.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Kylo Ren</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            
-            <div class="products__items-all" data-products>
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/console/joystick.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Controle Xbox</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/console/ps5.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">PS5</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/console/nintendo.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Nintendinho</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/console/switch.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Controle Switch</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all ">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/console/xbox.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Console Xbox</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all ">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/console/gameboy.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Game Boy Color</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/diversos/atari-shirt.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Camiseta Atari</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/diversos/snes-shirt.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Camiseta SNES</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/diversos/Skill-2.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Sonic</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/diversos/pink-radio.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Rádio</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all ">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/diversos/vr-googles.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Óculos VR</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
-            <div class="products__items-all ">
-               <div class="products__image-box">
-                  <img class="products__recicle-bin" src="./../assets/img/recicle_bin.svg" alt="">
-                  <img class="products__pen-edit" src="./../assets/img/pen.svg" alt="">                  
-                  <img 
-                  src="../assets/img/diversos/picachu.png"
-                  alt=""
-                  class="products__image-all"
-                  />
-               </div>
-               <p class="products__name">Picachu</p>
-               <p class="products__price">R$ 60,00</p>
-               <a href="" class="products__link">Ver produto</a>
-            </div>
+            <div class="products__box-all" data-product></div>
          </section>
-         
-         
       </main>
       <footer class="footer__container">
          <section class="footer__content">
             <div class="footer__about">
                <a href="#">
                   <img
-                  src="../assets/img/alurageek-logo.svg"
-                  alt="alurageek logo"
-                  class="footer__logo"
+                     src="../assets/img/alurageek-logo.svg"
+                     alt="alurageek logo"
+                     class="footer__logo"
                   />
                </a>
-               
+
                <ul class="footer__about-list">
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                     >Quem somos nós</a
+                        >Quem somos nós</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                     >Política de privacidade</a
+                        >Política de privacidade</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                     >Programa fidelidade</a
+                        >Programa fidelidade</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                     >Nossas lojas</a
+                        >Nossas lojas</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                     >Quero ser franqueado</a
+                        >Quero ser franqueado</a
                      >
                   </li>
                   <li class="footer__about-list-item">
                      <a href="#" class="footer__about-list-item-link"
-                     >Anuncie aqui</a
+                        >Anuncie aqui</a
                      >
                   </li>
                </ul>
@@ -412,34 +182,34 @@
                <fieldset class="footer__form-field">
                   <label class="footer__form-label" for="nome">nome</label>
                   <input
-                  name="name"
-                  id="nome"
-                  maxlength="40"
-                  minlength="3"
-                  type="text"
-                  class="footer__form-field-text"
-                  required
+                     name="name"
+                     id="nome"
+                     maxlength="40"
+                     minlength="3"
+                     type="text"
+                     class="footer__form-field-text"
+                     required
                   />
                   <span class="error-message"></span>
                </fieldset>
                <fieldset class="footer__form-field footer__form-field-message">
                   <label
-                  class="footer__form-label footer__form-label-message"
-                  for="message"
-                  >Escreva sua mensagem</label
+                     class="footer__form-label footer__form-label-message"
+                     for="message"
+                     >Escreva sua mensagem</label
                   >
                   <textarea
-                  name="message"
-                  id="message"
-                  type="text"
-                  maxlength="120"
-                  minlenght="2"
-                  class="footer__form-field-text footer__form-field-text-message"
-                  required
+                     name="message"
+                     id="message"
+                     type="text"
+                     maxlength="120"
+                     minlenght="2"
+                     class="footer__form-field-text footer__form-field-text-message"
+                     required
                   ></textarea>
                   <span class="error-message"></span>
                </fieldset>
-               
+
                <button type="submit" class="footer__form-button">
                   Enviar mensagem
                </button>
@@ -452,6 +222,14 @@
          </section>
       </footer>
       <script src="../JS/main.js" type="module"></script>
+      <script
+         src="../JS/controllers/products-onScreen.js"
+         type="module"
+      ></script>
+
+      <script
+         src="../JS/controllers/products-onScreen.js"
+         type="module"
+      ></script>
    </body>
-   </html>
-   
+</html>

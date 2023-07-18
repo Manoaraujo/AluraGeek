@@ -11,6 +11,9 @@
 }
 
 .products__recicle-bin {
+   cursor: pointer;
+   background: url(../../assets/img/recicle_bin.svg);
+   border: none;
    position: absolute;
    top: 0.5rem;
    left: 6.5rem;
@@ -18,6 +21,9 @@
    width: 1.5rem;
 }
 .products__pen-edit {
+   cursor: pointer;
+   background: url(../../assets/img/pen.svg);
+   border: none;
    position: absolute;
    top: 0.5rem;
    left: 9rem;

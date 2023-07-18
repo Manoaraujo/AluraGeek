@@ -1,5 +1,5 @@
 .products__container-all {
-   height: 60rem;
+   height: auto;
 }
 
 @media screen and (max-width: 769px) {

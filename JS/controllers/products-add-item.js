@@ -21,7 +21,7 @@ async function postProduct(event) {
          price,
          description
       );
-      window.location.href = "../html/home.html";
+      window.location.href = "../html/products.html";
    } catch (e) {
       alert(e);
    }
