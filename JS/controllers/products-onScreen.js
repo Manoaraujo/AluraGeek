@@ -8,7 +8,7 @@ export default function card(name, imageUrl, price, id) {
    showProduct.innerHTML = `
    <div class="products__image-box">
    <button class="products__recicle-bin" data-delete></button>
-   <button class="products__pen-edit"></button>         
+   <button class="products__pen-edit" data-edit></button>         
    <img 
    src="${imageUrl}"
    class="products__image-all"
@@ -21,9 +21,14 @@ export default function card(name, imageUrl, price, id) {
    `;
 
    const buttonDelete = showProduct.querySelector("[data-delete]");
+   const buttonEdit = showProduct.querySelector("[data-edit]");
 
    buttonDelete.addEventListener("click", () => {
       productServices.deleteProduct(id);
+   });
+
+   buttonEdit.addEventListener("click", () => {
+      window.location.href = "../html/products-edit.html";
    });
    return showProduct;
 }

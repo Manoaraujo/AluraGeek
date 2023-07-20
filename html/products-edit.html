@@ -28,53 +28,30 @@
       <link rel="stylesheet" href="../css/home/header/header-logo.css" />
       <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
 
-      <!-- -----PRODUCTS----- -->
+      <!-- -----ADD ITEMS----- -->
 
-      <link rel="stylesheet" href="../css/home/products/products-box.css" />
+      <link rel="stylesheet" href="../css/products-add/products-add-area.css" />
+      <link rel="stylesheet" href="../css/products-add/products-add-box.css" />
       <link
          rel="stylesheet"
-         href="../css/home/products/products-container.css"
+         href="../css/products-add/products-add-button.css"
       />
       <link
          rel="stylesheet"
-         href="../css/home/products/products-headline.css"
-      />
-      <link rel="stylesheet" href="../css/home/products/products-image.css" />
-      <link rel="stylesheet" href="../css/home/products/products-items.css" />
-      <link rel="stylesheet" href="../css/home/products/products-link.css" />
-      <link rel="stylesheet" href="../css/home/products/products-more.css" />
-      <link rel="stylesheet" href="../css/home/products/products-name.css" />
-      <link rel="stylesheet" href="../css/home/products/products-price.css" />
-      <link rel="stylesheet" href="../css/home/products/products-title.css" />
-
-      <link rel="stylesheet" href="../css/products-all/products-all-box.css" />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-button.css"
+         href="../css/products-add/products-add-container.css"
       />
       <link
          rel="stylesheet"
-         href="../css/products-all/products-all-container.css"
+         href="../css/products-add/products-add-label.css"
       />
       <link
          rel="stylesheet"
-         href="../css/products-all/products-all-header.css"
+         href="../css/products-add/products-add-message.css"
       />
+      <link rel="stylesheet" href="../css/products-add/products-add-text.css" />
       <link
          rel="stylesheet"
-         href="../css/products-all/products-all-headline.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-image.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-items.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-title.css"
+         href="../css/products-add/products-add-title.css"
       />
 
       <!-- -----FOOTER----- -->
@@ -90,11 +67,11 @@
 
       <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
 
-      <title>Alura Geek - Produtos</title>
+      <title>Alura Geek - Editar produtos</title>
    </head>
    <body>
       <header class="header__container">
-         <div class="header__box header__box-all">
+         <div class="header__box">
             <div class="header__box-left">
                <a href="./home.html" target="_blank">
                   <img
@@ -117,20 +94,91 @@
          </div>
       </header>
       <main>
-         <section class="products__container products__container-all">
-            <div class="products__headline-all">
-               <h4 class="products__title-all">Todos os produtos</h4>
-               <a
-                  class="products__button-add-link"
-                  href="./products-add.html"
-                  target="_blank"
-               >
-                  <button class="products__button-add" data-button-add>
-                     Adicionar produto
-                  </button>
-               </a>
-            </div>
-            <div class="products__box-all" data-product></div>
+         <section class="products__container products__container-add">
+            <form class="products__box products__box-add" data-edit-product>
+               <h4 class="products__title-add">Editar produto</h4>
+
+               <!-- <div class="products__area-add">
+                  <label for="url" class="products__label-add"
+                     >URL da imagem</label
+                  >
+                  <input
+                     id="url"
+                     name="url"
+                     type="url"
+                     minlength="3"
+                     class="products__text-add"
+                     required
+                     data-edit-url
+                  />
+
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="category" class="products__label-add"
+                     >Categoria</label
+                  ><input
+                     id="category"
+                     name="category"
+                     type="text"
+                     class="products__text-add"
+                     minlength="3"
+                     required
+                     data-edit-category
+                  />
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="name" class="products__label-add"
+                     >Nome do produto</label
+                  ><input
+                     id="itemName"
+                     name="name"
+                     type="text"
+                     class="products__text-add"
+                     minlength="3"
+                     required
+                     data-edit-name
+                  />
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="price" class="products__label-add"
+                     >Preço do produto</label
+                  ><input
+                     id="price"
+                     name="price"
+                     type="number"
+                     class="products__text-add"
+                     required
+                     data-edit-price
+                  />
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="description" class="products__label-add"
+                     >Descrição do produto</label
+                  >
+                  <textarea
+                     name="description"
+                     id="description"
+                     class="products__text-add products__message-add"
+                     required
+                     data-edit-description
+                  ></textarea>
+                  <span class="error-message"></span>
+               </div>
+
+               <input
+                  value="Editar produto"
+                  type="submit"
+                  class="products__button-add"
+               /> -->
+            </form>
          </section>
       </main>
       <footer class="footer__container">
@@ -223,10 +271,9 @@
       </footer>
       <script src="../JS/main.js" type="module"></script>
       <script
-         src="../JS/controllers/products-onScreen.js"
+         src="../JS/controllers/products-add-item.js"
          type="module"
       ></script>
-
       <script
          src="../JS/controllers/products-update-item.js"
          type="module"
