@@ -1,8 +1,10 @@
 import { productServices } from "../services/product-services.js";
+import { updates } from "../controllers/products-showForm.js";
 
 const products = document.querySelector("[data-product]");
+let showProduct;
 
-export default function card(name, imageUrl, price, id) {
+export function card(name, imageUrl, price, id) {
    const showProduct = document.createElement("div");
    showProduct.className = "products__items-all ";
    showProduct.innerHTML = `
@@ -27,11 +29,11 @@ export default function card(name, imageUrl, price, id) {
    });
 
    const buttonEdit = showProduct.querySelector("[data-edit]");
-   console.log(buttonEdit);
 
    buttonEdit.addEventListener("click", () => {
-      window.location.href = "../html/products-edit.html";
-      // productServices.showEditForm(id); // Call the function to display the edit form
+      updates.showEditForm(id);
+
+      // window.location.href = "../html/products-edit.html";
    });
 
    return showProduct;
