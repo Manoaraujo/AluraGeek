@@ -1,4 +1,5 @@
 import { productServices } from "../services/product-services.js";
+// import {} from "../controllers/products-onScreen.js";
 
 // ---UPDATE ITEM ---
 
@@ -39,6 +40,7 @@ export default function editForm(imageUrl, category, name, price, description) {
                      >URL da imagem</label
                   >
                   <input
+                     value="${imageUrl}"
                      id="url"
                      name="url"
                      type="url"
@@ -46,7 +48,7 @@ export default function editForm(imageUrl, category, name, price, description) {
                      class="products__text-add"
                      required
                      data-edit-url
-                  />${imageUrl}
+                  >
 
                   <span class="error-message"></span>
                </div>
@@ -55,6 +57,7 @@ export default function editForm(imageUrl, category, name, price, description) {
                   <label for="category" class="products__label-add"
                      >Categoria</label
                   ><input
+                     value="${category}"
                      id="category"
                      name="category"
                      type="text"
@@ -62,7 +65,7 @@ export default function editForm(imageUrl, category, name, price, description) {
                      minlength="3"
                      required
                      data-edit-category
-                  />${category}
+                  />
                   <span class="error-message"></span>
                </div>
 
@@ -70,6 +73,7 @@ export default function editForm(imageUrl, category, name, price, description) {
                   <label for="name" class="products__label-add"
                      >Nome do produto</label
                   ><input
+                     value="${name}"
                      id="itemName"
                      name="name"
                      type="text"
@@ -77,7 +81,7 @@ export default function editForm(imageUrl, category, name, price, description) {
                      minlength="3"
                      required
                      data-edit-name
-                  />${name}
+                  />
                   <span class="error-message"></span>
                </div>
 
@@ -85,13 +89,14 @@ export default function editForm(imageUrl, category, name, price, description) {
                   <label for="price" class="products__label-add"
                      >Preço do produto</label
                   ><input
+                     value="${price}"
                      id="price"
                      name="price"
                      type="number"
                      class="products__text-add"
                      required
                      data-edit-price
-                  />${price}
+                  />
                   <span class="error-message"></span>
                </div>
 
@@ -121,23 +126,24 @@ export default function editForm(imageUrl, category, name, price, description) {
    return showForm;
 }
 
-async function showEditForm() {
+async function showEditForm(id) {
    try {
-      const productsAPI = await productServices.getProductList();
-      productsAPI.forEach((element) =>
-         updateForm.appendChild(
-            editForm(
-               element.imageUrl,
-               element.category,
-               element.name,
-               element.price,
-               element.description
-            )
+      const product = await productServices.updateProductList(id);
+
+      console.table(product);
+      updateForm.appendChild(
+         editForm(
+            product.imageUrl,
+            product.category,
+            product.name,
+            product.price,
+            product.description
          )
       );
-   } catch {
-      updateForm.innerHTML = `<h2 >Não foi possível carregar os produtos</h2>`;
+   } catch (e) {
+      console.log(e);
+      updateForm.innerHTML = `<h2 >Não foi possível carregar o produto.</h2>`;
    }
 }
 
-showEditForm();
+showEditForm(0);
