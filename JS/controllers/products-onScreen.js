@@ -17,19 +17,23 @@ export default function card(name, imageUrl, price, id) {
    <p class="products__name">${name}</p>
    <p class="products__price">R$ ${price.toFixed(2)}</p>
    <a class="products__link" href="../views/produto.html?id="${id}" >Ver produto</a>
-   
+      
    `;
 
    const buttonDelete = showProduct.querySelector("[data-delete]");
-   const buttonEdit = showProduct.querySelector("[data-edit]");
 
    buttonDelete.addEventListener("click", () => {
       productServices.deleteProduct(id);
    });
 
+   const buttonEdit = showProduct.querySelector("[data-edit]");
+   console.log(buttonEdit);
+
    buttonEdit.addEventListener("click", () => {
       window.location.href = "../html/products-edit.html";
+      // productServices.showEditForm(id); // Call the function to display the edit form
    });
+
    return showProduct;
 }
 
