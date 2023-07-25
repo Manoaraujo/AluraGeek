@@ -4,7 +4,7 @@ import { updates } from "../controllers/products-showForm.js";
 const products = document.querySelector("[data-product]");
 let showProduct;
 
-export function card(name, imageUrl, price, id) {
+export default function card(name, imageUrl, price, id) {
    const showProduct = document.createElement("div");
    showProduct.className = "products__items-all ";
    showProduct.innerHTML = `

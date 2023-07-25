@@ -103,23 +103,27 @@
                      class="header__logo"
                   />
                </a>
-               <input
-                  placeholder="O que deseja encontrar?"
-                  type="text"
-                  class="header__search-box"
-               />
+               <div class="header__search-box">
+                  <input
+                     placeholder="O que deseja encontrar?"
+                     type="text"
+                     class="header__input-box"
+                     data-search
+                  />
+                  <button
+                     class="header__button-magnifier"
+                     data-search-btn
+                  ></button>
+               </div>
             </div>
-
-            <img
-               class="header__magnifier header__hidden"
-               src="../assets/img/magnify-logo.svg"
-            />
          </div>
       </header>
       <main>
          <section class="products__container products__container-all">
             <div class="products__headline-all">
-               <h4 class="products__title-all">Todos os produtos</h4>
+               <a class="products__title-all-link" href="./products.html"
+                  ><h4 class="products__title-all">Todos os produtos</h4></a
+               >
                <a
                   class="products__button-add-link"
                   href="./products-add.html"
@@ -226,5 +230,6 @@
          src="../JS/controllers/products-onScreen.js"
          type="module"
       ></script>
+      <script src="../JS/controllers/products-filter.js" type="module"></script>
    </body>
 </html>

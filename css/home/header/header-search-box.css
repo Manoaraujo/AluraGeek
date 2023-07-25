@@ -1,11 +1,8 @@
 .header__search-box {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
    background: var(--light-grey);
-   background-image: url("../../../assets/img/magnify-logo.svg");
-   background-position: 232px 8px;
-
-   background-repeat: no-repeat;
-
-   padding-left: 1rem;
 
    border: none;
    border-radius: 20px;
@@ -13,7 +10,18 @@
    width: 17rem;
    height: 2.5rem;
 }
-.header__search-box::placeholder {
+
+.header__input-box {
+   background: var(--light-grey);
+   border: none;
+   color: var(--medium-grey);
+   box-sizing: border-box;
+   padding: 1rem;
+   font-family: var(--Raleway);
+   width: 13rem;
+   height: 1rem;
+}
+.header__input-box::placeholder {
    color: var(--medium-grey);
    padding: 1rem;
    font-family: var(--Raleway);

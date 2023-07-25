@@ -97,6 +97,14 @@ async function editProduct(id, imageUrl, category, name, price, description) {
    const productsListConverted = await connection.json();
    return productsListConverted;
 }
+async function searchProduct(search) {
+   const connection = await fetch(
+      `https://64b5bca0f3dbab5a95c79f73.mockapi.io/products?name=${search}`
+   );
+   const returnedProducts = await connection.json();
+
+   return returnedProducts;
+}
 
 export const productServices = {
    getProductList,
@@ -104,4 +112,5 @@ export const productServices = {
    deleteProduct,
    editProduct,
    updateProductList,
+   searchProduct,
 };

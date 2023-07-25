@@ -97,28 +97,47 @@ export function editForm(imageUrl, category, name, price, description) {
 
    return showForm;
 }
+
+const buttonData = [];
+
 async function showEditForm(id) {
    try {
       const product = await productServices.updateProductList(id);
 
-      console.table(product);
+      buttonData.push(product);
+      console.table(buttonData);
+      window.location.href = "../html/products-edit.html";
+      return buttonData;
 
-      updateForm.appendChild(
-         editForm(
-            product.imageUrl,
-            product.category,
-            product.name,
-            product.price,
-            product.description
-         )
-      );
+      // updateForm.appendChild(
+      //    editForm(
+      //       product.imageUrl,
+      //       product.category,
+      //       product.name,
+      //       product.price,
+      //       product.description
+      //    )
+      // );
    } catch (e) {
       console.log(e);
       updateForm.innerHTML = `<h2 >Não foi possível carregar o produto.</h2>`;
    }
 }
+console.table(buttonData);
 
-showEditForm(1);
+async function createForm() {
+   updateForm.appendChild(
+      editForm(
+         buttonData.imageUrl,
+         buttonData.category,
+         buttonData.name,
+         buttonData.price,
+         buttonData.description
+      )
+   );
+}
+// showEditForm();
+createForm();
 
 export const updates = {
    showEditForm,
