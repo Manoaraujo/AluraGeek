@@ -14,6 +14,10 @@
    height: 3.94544rem;
    width: 26.4375rem;
 }
+.login__field-box {
+   display: flex;
+   flex-direction: column;
+}
 
 .login__field::placeholder {
    color: var(--medium-grey);

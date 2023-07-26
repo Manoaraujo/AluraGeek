@@ -7,7 +7,6 @@ export default function card(name, imageUrl, price, id) {
    showProduct.className = "products__items-all ";
    showProduct.innerHTML = `
    <div class="products__image-box">
-   
    <img 
    src="${imageUrl}"
    class="products__image-all"
@@ -15,7 +14,7 @@ export default function card(name, imageUrl, price, id) {
    </div>
    <p class="products__name">${name}</p>
    <p class="products__price">R$ ${price.toFixed(2)}</p>
-   <a class="products__link" href="../views/produto.html?id="${id}" >Ver produto</a>
+   <a class="products__link" target="blank_" href="../../html/products-description.html?id="${id}" >Ver produto</a>
       
    `;
 

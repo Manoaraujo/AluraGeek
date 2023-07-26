@@ -78,7 +78,7 @@
    </head>
    <body>
       <header class="header__container">
-         <div class="header__box">
+         <div class="header__box header__box-all">
             <div class="header__box-left">
                <a href="./home.html" target="_blank">
                   <img
@@ -87,20 +87,27 @@
                      class="header__logo"
                   />
                </a>
-               <input
-                  placeholder="O que deseja encontrar?"
-                  type="text"
-                  class="header__search-box"
-               />
+               <div class="header__search-box">
+                  <input
+                     placeholder="O que deseja encontrar?"
+                     type="text"
+                     class="header__input-box"
+                     data-search
+                  />
+                  <button
+                     class="header__button-magnifier"
+                     data-search-btn
+                  ></button>
+               </div>
             </div>
-            <button class="header__button">Menu administrador</button>
-            <img
-               class="header__magnifier header__hidden"
-               src="../assets/img/magnify-logo.svg"
-            />
+            <a class="header__button-link" href="./home-login.html"
+               ><button class="header__button">Menu administrador</button></a
+            >
          </div>
       </header>
-      <main></main>
+      <main>
+         <section class="product__drecription-container"><div></div></section>
+      </main>
       <footer class="footer__container">
          <section class="footer__content">
             <div class="footer__about">

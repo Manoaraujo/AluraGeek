@@ -12,6 +12,10 @@
    width: 10.375rem;
 }
 
+.header__button-link {
+   text-decoration: none;
+}
+
 .header__button-magnifier {
    background: var(--light-grey);
 

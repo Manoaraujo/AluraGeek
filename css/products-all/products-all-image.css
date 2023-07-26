@@ -1,5 +1,4 @@
 .products__image-all {
-   /* position: relative; */
    height: 10.875rem;
    width: 11rem;
 }
@@ -33,6 +32,7 @@
 
 @media screen and (max-width: 769px) {
    .products__image-all {
+      height: 10.1091rem;
       width: 10.25rem;
    }
 
@@ -46,7 +46,8 @@
 
 @media screen and (max-width: 426px) {
    .products__image-all {
-      width: 10rem;
+      height: 9.0675rem;
+      width: 9.75rem;
    }
    .products__recicle-bin {
       left: 5.5rem;

@@ -105,6 +105,15 @@ async function searchProduct(search) {
    return returnedProducts;
 }
 
+async function searchProductCategory(search) {
+   const connection = await fetch(
+      `https://64b5bca0f3dbab5a95c79f73.mockapi.io/products?category=${search}`
+   );
+   const returnedProducts = await connection.json();
+
+   return returnedProducts;
+}
+
 export const productServices = {
    getProductList,
    addProduct,
@@ -112,4 +121,5 @@ export const productServices = {
    updateProduct,
    updateProductList,
    searchProduct,
+   searchProductCategory,
 };

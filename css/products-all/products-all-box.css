@@ -3,7 +3,7 @@
    flex-wrap: wrap;
    align-items: flex-start;
    gap: 1rem;
-   height: auto;
+   height: fit-content;
    width: 71rem;
 }
 
@@ -11,14 +11,14 @@
    .products__box-all {
       justify-content: flex-start;
       gap: 1rem;
-      height: 83rem;
+      height: fit-content;
       width: 44rem;
    }
 }
 @media screen and (max-width: 426px) {
    .products__box-all {
       gap: 0.5rem;
-      height: 44rem;
+      height: fit-content;
       width: 22.5rem;
    }
 }

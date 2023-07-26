@@ -1,5 +1,5 @@
 .login__form {
    display: flex;
    flex-direction: column;
-   gap: 1.5625rem;
+   gap: 0.5625rem;
 }
