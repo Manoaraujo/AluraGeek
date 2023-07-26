@@ -1,7 +1,5 @@
 import { productServices } from "../services/product-services.js";
 
-// ---ADD NEW ITEM ---
-
 const addForm = document.querySelector("[data-add-product]");
 
 async function postProduct(event) {
@@ -21,7 +19,7 @@ async function postProduct(event) {
          price,
          description
       );
-      window.location.href = "../html/products.html";
+      window.location.href = "../html/products-admin.html";
    } catch (e) {
       alert(e);
    }

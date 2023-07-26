@@ -28,54 +28,13 @@
       <link rel="stylesheet" href="../css/home/header/header-logo.css" />
       <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
 
-      <!-- -----PRODUCTS----- -->
+      <!-- -----LOGIN----- -->
 
-      <link rel="stylesheet" href="../css/home/products/products-box.css" />
-      <link
-         rel="stylesheet"
-         href="../css/home/products/products-container.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/home/products/products-headline.css"
-      />
-      <link rel="stylesheet" href="../css/home/products/products-image.css" />
-      <link rel="stylesheet" href="../css/home/products/products-items.css" />
-      <link rel="stylesheet" href="../css/home/products/products-link.css" />
-      <link rel="stylesheet" href="../css/home/products/products-more.css" />
-      <link rel="stylesheet" href="../css/home/products/products-name.css" />
-      <link rel="stylesheet" href="../css/home/products/products-price.css" />
-      <link rel="stylesheet" href="../css/home/products/products-title.css" />
-
-      <link rel="stylesheet" href="../css/products-all/products-all-box.css" />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-button.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-container.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-header.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-headline.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-image.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-items.css"
-      />
-      <link
-         rel="stylesheet"
-         href="../css/products-all/products-all-title.css"
-      />
+      <link rel="stylesheet" href="../css/home-login/login-button.css" />
+      <link rel="stylesheet" href="../css/home-login/login-container.css" />
+      <link rel="stylesheet" href="../css/home-login/login-field.css" />
+      <link rel="stylesheet" href="../css/home-login/login-form.css" />
+      <link rel="stylesheet" href="../css/home-login/login-title.css" />
 
       <!-- -----FOOTER----- -->
       <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
@@ -90,11 +49,11 @@
 
       <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
 
-      <title>Alura Geek - Produtos</title>
+      <title>Alura Geek - login</title>
    </head>
    <body>
       <header class="header__container">
-         <div class="header__box header__box-all">
+         <div class="header__box">
             <div class="header__box-left">
                <a href="./home.html" target="_blank">
                   <img
@@ -103,38 +62,70 @@
                      class="header__logo"
                   />
                </a>
-               <div class="header__search-box">
-                  <input
-                     placeholder="O que deseja encontrar?"
-                     type="text"
-                     class="header__input-box"
-                     data-search
-                  />
-                  <button
-                     class="header__button-magnifier"
-                     data-search-btn
-                  ></button>
-               </div>
+               <input
+                  placeholder="O que deseja encontrar?"
+                  type="text"
+                  class="header__search-box"
+               />
             </div>
+
+            <img
+               class="header__magnifier header__hidden"
+               src="../assets/img/magnify-logo.svg"
+            />
          </div>
       </header>
       <main>
-         <section class="products__container products__container-all">
-            <div class="products__headline-all">
-               <a class="products__title-all-link" href="./products.html"
-                  ><h4 class="products__title-all">Todos os produtos</h4></a
-               >
-               <a
-                  class="products__button-add-link"
-                  href="./home-login.html"
-                  target="_blank"
-               >
-                  <button class="products__button-add" data-button-add>
-                     Adicionar produto
-                  </button>
-               </a>
-            </div>
-            <div class="products__box-all" data-product></div>
+         <section class="login__container">
+            <h4 class="login__title">Cadastre-se</h4>
+            <form class="login__form" type="submit" data-user-add>
+               <fieldset class="login__field">
+                  <input
+                     name="name"
+                     id="name"
+                     type="name"
+                     placeholder="Escreva seu nome"
+                     minlength="5"
+                     class="login__field login__field-email"
+                     required
+                     data-user-name
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="login__field">
+                  <input
+                     name="email"
+                     id="email"
+                     type="email"
+                     placeholder="Escreva seu email"
+                     minlength="5"
+                     class="login__field login__field-email"
+                     required
+                     data-user-email
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="login__field">
+                  <input
+                     name="password"
+                     id="password"
+                     type="password"
+                     placeholder="Escreva sua senha"
+                     minlength="8"
+                     class="login__field login__field-password"
+                     required
+                     data-user-password
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <input
+                  value="Cadastrar"
+                  class="login__button"
+                  id="enviar"
+                  type="submit"
+                  data-button-login
+               />
+            </form>
          </section>
       </main>
       <footer class="footer__container">
@@ -226,10 +217,6 @@
          </section>
       </footer>
       <script src="../JS/main.js" type="module"></script>
-      <script
-         src="../JS/controllers/products-onScreen.js"
-         type="module"
-      ></script>
-      <script src="../JS/controllers/products-filter.js" type="module"></script>
+      <script src="../JS/controllers/user-add.js" type="module"></script>
    </body>
 </html>

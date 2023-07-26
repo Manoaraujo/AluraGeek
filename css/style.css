@@ -21,3 +21,10 @@
    margin-top: 0.5rem;
    color: red;
 }
+
+body {
+   background: var(--light-grey);
+   display: flex;
+
+   flex-direction: column;
+}

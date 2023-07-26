@@ -8,8 +8,6 @@ async function searchProductList(event) {
 
    const searchResult = await productServices.searchProduct(searchData);
 
-   console.log(searchResult);
-
    const products = document.querySelector("[data-product]");
 
    while (products.firstChild) {
@@ -23,7 +21,7 @@ async function searchProductList(event) {
    });
 
    if (searchResult.length == 0) {
-      products.innerHTML = `<h2 class="mensagem__titulo">Não existem produtos com esse termo</h2>`;
+      products.innerHTML = `<h2 class="error-message">Não existem produtos com esse termo</h2>`;
    }
 }
 

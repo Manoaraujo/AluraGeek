@@ -1,16 +1,16 @@
 .products__container-all {
-   height: auto;
+   height: fit-content;
 }
 
 @media screen and (max-width: 769px) {
    .products__container-all {
-      height: 92rem;
+      height: fit-content;
       gap: 1rem;
    }
 }
 
 @media screen and (max-width: 426px) {
    .products__container-all {
-      height: 140rem;
+      height: fit-content;
    }
 }

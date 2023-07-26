@@ -71,7 +71,7 @@ async function deleteProduct(id) {
    return productsListConverted;
 }
 
-async function editProduct(id, imageUrl, category, name, price, description) {
+async function updateProduct(id, imageUrl, name, price, category, description) {
    const connection = await fetch(
       `https://64b5bca0f3dbab5a95c79f73.mockapi.io/products/${id}`,
       {
@@ -90,10 +90,9 @@ async function editProduct(id, imageUrl, category, name, price, description) {
    );
 
    if (!connection.ok) {
-      throw new Error("Não foi possível apagar o produto.");
+      throw new Error("Não foi possível editar o produto.");
    }
 
-   window.location.href = "../html/products.html";
    const productsListConverted = await connection.json();
    return productsListConverted;
 }
@@ -110,7 +109,7 @@ export const productServices = {
    getProductList,
    addProduct,
    deleteProduct,
-   editProduct,
+   updateProduct,
    updateProductList,
    searchProduct,
 };
