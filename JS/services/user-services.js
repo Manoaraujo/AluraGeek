@@ -1,3 +1,5 @@
+// ---POST---
+
 async function user(name, email, password) {
    const connection = await fetch(
       `https://64b5bca0f3dbab5a95c79f73.mockapi.io/Users`,
@@ -24,4 +26,33 @@ async function user(name, email, password) {
 
 export const userServices = {
    user,
+   userList,
+   verifyUser,
 };
+
+async function userList() {
+   const connection = await fetch(
+      `https://64b5bca0f3dbab5a95c79f73.mockapi.io/Users`
+   );
+   const userData = await connection.json();
+   return userData;
+}
+
+async function verifyUser(userEmail, userPassword) {
+   const connection = await fetch(
+      `https://64b5bca0f3dbab5a95c79f73.mockapi.io/Users`
+   );
+   const userData = await connection.json();
+
+   try {
+      const user = userData.find((user) => user.email === userEmail);
+
+      if (user && user.password === userPassword) {
+         return user;
+      } else {
+         return null;
+      }
+   } catch (e) {
+      throw new Error(e);
+   }
+}

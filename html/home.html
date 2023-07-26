@@ -72,7 +72,7 @@
    </head>
    <body>
       <header class="header__container">
-         <div class="header__box">
+         <div class="header__box header__box-all">
             <div class="header__box-left">
                <a href="./home.html" target="_blank">
                   <img
@@ -81,22 +81,21 @@
                      class="header__logo"
                   />
                </a>
-               <input
-                  placeholder="O que deseja encontrar?"
-                  type="text"
-                  class="header__search-box"
-               />
+               <div class="header__search-box">
+                  <input
+                     placeholder="O que deseja encontrar?"
+                     type="text"
+                     class="header__input-box"
+                     data-search
+                  />
+                  <button
+                     class="header__button-magnifier"
+                     data-search-btn
+                  ></button>
+               </div>
             </div>
-            <a href="./home-login.html" target="_blank">
-               <button type="button" class="header__button" data-header-button>
-                  Login
-               </button>
-            </a>
-            <img
-               class="header__magnifier header__hidden"
-               src="../assets/img/magnify-logo.svg"
-            />
          </div>
+      </header>
       </header>
       <main>
          <!-- -----BANNER----- -->
