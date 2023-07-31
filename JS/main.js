@@ -6,7 +6,7 @@ form.addEventListener("submit", (e) => {
    e.preventDefault();
 
    const answerList = {
-      nome: e.target.elements["name"].value,
+      nome: e.target.elements["nome"].value,
       message: e.target.elements["message"].value,
    };
 
@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
    params.append("subject", answerList.assunto);
    params.append(
       "body",
-      `      Nome: ${answerList.name}
+      `      Nome: ${answerList.nome}
       Mensagem: ${answerList.message}`
    );
 
@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
       .toString()
       .replaceAll("+", " ")}`;
 
-   window.location.href = mailtoLink;
+   window.open(mailtoLink, "_blank");
 });
 
 // -----VALIDATION-----
