@@ -19,6 +19,12 @@ function createCard(id, name, price, imageUrl) {
 async function listProduct() {
    const mainContainer = document.querySelector(".main__container");
    const listApi = await productServices.getProductList();
+
+   const allCategories = document.createElement("div");
+   allCategories.className = "products__home-search";
+   allCategories.setAttribute("data-product", "");
+   mainContainer.appendChild(allCategories);
+
    const categoriesList = {};
 
    listApi.forEach((product) => {
@@ -45,7 +51,6 @@ async function listProduct() {
       categoryMore.className = "products__more";
 
       const categoryLink = document.createElement("a");
-      // categoryLink.target = "_blank";
       categoryLink.href = "./products.html";
       categoryLink.className = "products__link";
       categoryLink.textContent = "Ver Mais";
@@ -61,6 +66,7 @@ async function listProduct() {
 
       const categoryProducts = document.createElement("div");
       categoryProducts.className = "products__box";
+
       categoryProducts.id = category.toLowerCase().replace(" ", "-");
       categoryContainer.appendChild(categoryProducts);
 
@@ -75,7 +81,7 @@ async function listProduct() {
          );
       });
 
-      mainContainer.appendChild(categoryContainer);
+      allCategories.appendChild(categoryContainer);
    }
 }
 
@@ -90,7 +96,7 @@ const promoFrases = [
    "42% de desconto pro seu pai gamer!",
 ];
 
-let currentIndex = 0; // Variável para acompanhar o índice da frase atual
+let currentIndex = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
    changeFrase(promoTitle[1], promoFrases[currentIndex]);
@@ -99,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
    setInterval(() => {
       currentIndex = (currentIndex + 1) % promoTitle.length;
       changeFrase(promoTitle[1], promoFrases[currentIndex]);
-   }, 6000); // 30 segundos em milissegundos
+   }, 6000); //
 });
 
 function changeFrase(title, frase) {
@@ -112,7 +118,7 @@ function changeFrase(title, frase) {
          <p class="banner__text">
          ${frase}
          </p>
-          <a href="#consoles"
+         <a href="#console"
                   ><button class="banner__button">Ver Console</button>
                </a>
          `;
