@@ -19,6 +19,7 @@ async function getProductList() {
    return productsListConverted;
 }
 
+
 async function updateProductList(id) {
    const productList = await fetch(
       `https://64b5bca0f3dbab5a95c79f73.mockapi.io/products/${id}`
@@ -27,6 +28,7 @@ async function updateProductList(id) {
 
    return productsListConverted;
 }
+
 
 async function addProduct(imageUrl, category, name, price, description) {
    const connection = await fetch(
@@ -122,4 +124,5 @@ export const productServices = {
    updateProductList,
    searchProduct,
    searchProductCategory,
+
 };

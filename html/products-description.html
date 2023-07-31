@@ -28,37 +28,60 @@
       <link rel="stylesheet" href="../css/home/header/header-logo.css" />
       <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
 
-      <!-- -----ADD ITEMS----- -->
+      <!-- -----PRODUCTS----- -->
 
-      <link rel="stylesheet" href="../css/products/add/products-add-area.css" />
-
-      <link rel="stylesheet" href="../css/products/add/products-add-box.css" />
-
+      <link rel="stylesheet" href="../css/home/products/products-box.css" />
       <link
          rel="stylesheet"
-         href="../css/products/add/products-add-button.css"
+         href="../css/home/products/products-container.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/home/products/products-headline.css"
+      />
+      <link rel="stylesheet" href="../css/home/products/products-image.css" />
+      <link rel="stylesheet" href="../css/home/products/products-items.css" />
+      <link rel="stylesheet" href="../css/home/products/products-link.css" />
+      <link rel="stylesheet" href="../css/home/products/products-more.css" />
+      <link rel="stylesheet" href="../css/home/products/products-name.css" />
+      <link rel="stylesheet" href="../css/home/products/products-price.css" />
+      <link rel="stylesheet" href="../css/home/products/products-title.css" />
+
+      <link rel="stylesheet" href="../css/products-all/products-all-box.css" />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-button.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-container.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-header.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-headline.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-image.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-items.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-title.css"
       />
 
-      <link
-         rel="stylesheet"
-         href="../css/products/add/products-add-container.css"
-      />
+
 
       <link
          rel="stylesheet"
-         href="../css/products/add/products-add-label.css"
-      />
-
-      <link
-         rel="stylesheet"
-         href="../css/products/add/products-add-message.css"
-      />
-
-      <link rel="stylesheet" href="../css/products/add/products-add-text.css" />
-
-      <link
-         rel="stylesheet"
-         href="../css/products/add/products-add-title.css"
+         href="../css/product-description.css/product-description-container.css"
       />
 
       <!-- -----FOOTER----- -->
@@ -106,7 +129,18 @@
          </div>
       </header>
       <main>
-         <section class="product__drecription-container"><div></div></section>
+         <section class="product__display-container" data-details>
+            <!-- <div class="product__display-box">
+               <img class="product__display-image" src="${imageUrl}" />
+
+               <div class="product__display-textbox">
+                  <p class="product__display-title">${name}</p>
+                  <p class="product__display-price">R$ ${price}</p>
+                  <p class="product__display-text">${description}</p>
+               </div>
+            </div> -->
+         </section>
+         <section class="products__container-similar" data-similar></section>
       </main>
       <footer class="footer__container">
          <section class="footer__content">
@@ -114,6 +148,7 @@
                <a href="#">
                   <img
                      src="../assets/img/alurageek-logo.svg"
+                     -
                      alt="alurageek logo"
                      class="footer__logo"
                   />
@@ -197,5 +232,8 @@
          </section>
       </footer>
       <script src="../JS/main.js" type="module"></script>
+      <script src="../JS/controllers/products-filter.js" type="module"></script>
+      <script src="../JS/controllers/product-details.js" type="module"></script>
+      
    </body>
 </html>

@@ -1,3 +1,10 @@
 {
-   "cSpell.words": ["alurageek", "endereco", "minlenght"]
+   "cSpell.words": [
+      "alurageek",
+      "endereco",
+      "minlenght",
+      "starwars",
+      "textbox"
+   ],
+   "liveServer.settings.port": 5501
 }

@@ -28,3 +28,6 @@ async function searchProductList(event) {
 const searchButton = document.querySelector("[data-search-btn]");
 
 searchButton.addEventListener("click", (event) => searchProductList(event));
+
+// const queryString = window.location.search;
+// console.log(queryString);

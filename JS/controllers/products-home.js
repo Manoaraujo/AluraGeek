@@ -1,26 +1,125 @@
 import { productServices } from "../services/product-services.js";
-import card from "../controllers/products-onScreen.js";
 
-async function searchProductList(category) {
-   const searchResult = await productServices.searchProductCategory(category);
+function createCard(id, name, price, imageUrl) {
+   const showProduct = document.createElement("div");
 
-   const products = document.querySelector("[data-product]");
+   showProduct.className = "products__items-all";
+   showProduct.setAttribute("data-id", id);
 
-   while (products.firstChild) {
-      products.removeChild(products.firstChild);
-   }
+   showProduct.innerHTML = `
+   <img src="${imageUrl}" alt="" class="products__image-all" />
+   <h2 class="products__name">${name}</h2>
+   <p class="products__price">R$ ${price.toFixed(2)}</p>
+   <a href="" class="products__link" id="view-product" data-product-id>Ver produto</a>
+   `;
 
-   searchResult.forEach((element) => {
-      products.appendChild(
-         card(element.name, element.imageUrl, element.price, element.id)
-      );
+   return showProduct;
+}
+
+async function listProduct() {
+   const mainContainer = document.querySelector(".main__container");
+   const listApi = await productServices.getProductList();
+   const categoriesList = {};
+
+   listApi.forEach((product) => {
+      if (!categoriesList[product.category]) {
+         categoriesList[product.category] = [];
+      }
+
+      categoriesList[product.category].push(product);
    });
 
-   if (searchResult.length == 0) {
-      products.innerHTML = `<h2 class="error-message">Não existem produtos com esse termo</h2>`;
+   for (const category in categoriesList) {
+      const categoryContainer = document.createElement("section");
+      categoryContainer.className = "products__container";
+
+      const categoryHeader = document.createElement("div");
+      categoryHeader.className = "products__headline";
+
+      const categoryTitle = document.createElement("h2");
+      categoryTitle.className = "products__title";
+      categoryTitle.textContent = category;
+      categoryHeader.appendChild(categoryTitle);
+
+      const categoryMore = document.createElement("div");
+      categoryMore.className = "products__more";
+
+      const categoryLink = document.createElement("a");
+      categoryLink.target = "_blank";
+      categoryLink.href = "./products.html";
+      categoryLink.className = "products__link";
+      categoryLink.textContent = "Ver Mais";
+      categoryMore.appendChild(categoryLink);
+
+      const categoryArrow = document.createElement("img");
+      categoryArrow.src = "../assets/img/arrow.svg";
+      categoryArrow.className = "products__arrow";
+      categoryMore.appendChild(categoryArrow);
+
+      categoryHeader.appendChild(categoryMore);
+      categoryContainer.appendChild(categoryHeader);
+
+      const categoryProducts = document.createElement("div");
+      categoryProducts.className = "products__box";
+      categoryProducts.id = category.toLowerCase().replace(" ", "-");
+      categoryContainer.appendChild(categoryProducts);
+
+      categoriesList[category].forEach((product) => {
+         categoryProducts.appendChild(
+            createCard(
+               product.id,
+               product.name,
+               product.price,
+               product.imageUrl
+            )
+         );
+      });
+
+      mainContainer.appendChild(categoryContainer);
    }
 }
-const category = document.querySelector("[data-category]").innerText;
 
-console.log(category);
-searchProductList(category);
+document.addEventListener("DOMContentLoaded", listProduct());
+
+// ****************************
+// CHANGE PROMO FRASES
+
+const promoTitle = ["Dezembro Promocional", "Promoção dia dos pais!"];
+const promoFrases = [
+   "Produtos selecionados com 15% de desconto.",
+   "42% de desconto pro seu pai gamer!",
+];
+
+let currentIndex = 0; // Variável para acompanhar o índice da frase atual
+
+document.addEventListener("DOMContentLoaded", () => {
+   changeFrase(promoTitle[1], promoFrases[currentIndex]);
+
+   // Chamar a função changeFrase a cada 30 segundos
+   setInterval(() => {
+      currentIndex = (currentIndex + 1) % promoTitle.length;
+      changeFrase(promoTitle[1], promoFrases[currentIndex]);
+   }, 6000); // 30 segundos em milissegundos
+});
+
+function changeFrase(title, frase) {
+   const fraseContainer = document.createElement("div");
+   const promoContainer = document.querySelector("[data-banner]");
+   fraseContainer.className = "banner__box";
+   fraseContainer.innerHTML = `
+         
+         <h1 class="banner__title">${title}</h1>
+         <p class="banner__text">
+         ${frase}
+         </p>
+          <a href="#consoles"
+                  ><button class="banner__button">Ver Console</button>
+               </a>
+         `;
+   promoContainer.innerHTML = ""; // Limpar o conteúdo anterior do container
+   promoContainer.appendChild(fraseContainer);
+}
+
+export const displayProducts ={
+   createCard,
+}

@@ -55,6 +55,36 @@
       <link rel="stylesheet" href="../css/home/products/products-price.css" />
       <link rel="stylesheet" href="../css/home/products/products-title.css" />
 
+      <link rel="stylesheet" href="../css/products-all/products-all-box.css" />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-button.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-container.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-header.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-headline.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-image.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-items.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-all/products-all-title.css"
+      />
+
       <!-- -----FOOTER----- -->
       <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
       <link rel="stylesheet" href="../css/home/footer/footer-container.css" />
@@ -71,6 +101,7 @@
       <title>Alura Geek</title>
    </head>
    <body>
+    
       <header class="header__container">
          <div class="header__box header__box-all">
             <div class="header__box-left">
@@ -94,257 +125,79 @@
                   ></button>
                </div>
             </div>
+            <a class="header__button-link" href="./home-login.html"
+               ><button class="header__button">Login</button></a
+            >
          </div>
       </header>
-      </header>
-      <main>
+      <main class="main__container">
          <!-- -----BANNER----- -->
-
-         <section class="banner__container">
-            <div class="banner__box">
-               <h1 class="banner__title">Dezembro Promocional</h1>
+         <section class="banner__container" data-banner>
+            <!-- <div class="banner__box" data-banner> -->
+            <!-- <h1 class="banner__title">Dezembro Promocional</h1>
                <p class="banner__text">
                   Produtos selecionados com 33% de desconto
-               </p>
-               <a href="#consoles"
+               </p> -->
+            <!-- <a href="#consoles"
                   ><button class="banner__button">Ver Console</button>
-               </a>
-            </div>
+               </a> -->
+            <!-- </div> -->
          </section>
 
-         <!-- -----STAR WARS----- -->
+         <!-- 
+      -----STAR WARS----- -->
 
-         <section id="starwars" class="products__container">
-            <div class="products__headline">
-               <h4 class="products__title">Star Wars</h4>
-               <a target="_blank" class="products__more" href="./products.html">
-                  <p class="products__link">Ver tudo</p>
-                  <img
-                     src="../assets/img/arrow.svg"
-                     alt="arrow icon"
-                     class="products__arrow"
-                  />
-               </a>
-            </div>
-            <div class="products__box">
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/stormtrooper-mug.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Caneca</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/imperial-helmets.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Capacetes imperais</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/yoda.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Yoda</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/star_wars/stormtrooper.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Stormtroopers</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/star_wars/baby-yoda.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Baby Yoda</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/star_wars/kilo ren.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Kylo Ren</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-            </div>
-         </section>
+         <!-- <section class="products__container">
+         <div class="products__headline">
+            <h4 class="products__title" >
+               Star Wars
+            </h4>
+            <a target="_blank" class="products__more" href="">
+               <p class="products__link">Ver tudo</p>
+               <img
+               src="../assets/img/arrow.svg"
+               alt="arrow icon"
+               class="products__arrow"
+               />
+            </a>
+         </div>
+         
+         <div id="starwars" class="products__box" ></div>
+      </section> -->
 
          <!-- -----CONSOLE----- -->
 
-         <section id="consoles" class="products__container">
-            <div class="products__headline">
-               <h4 class="products__title">Consoles</h4>
-               <a target="_blank" class="products__more" href="./products.html">
-                  <p class="products__link">Ver tudo</p>
-                  <img
-                     src="../assets/img/arrow.svg"
-                     alt="arrow icon"
-                     class="products__arrow"
-                  />
-               </a>
-            </div>
-            <div class="products__box">
-               <div class="products__items" data-products>
-                  <img
-                     src="../assets/img/console/joystick.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Controle Xbox</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/console/ps5.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">PS5</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/console/nintendo.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Nintendinho</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/console/switch.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Controle Switch</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/console/xbox.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Console Xbox</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/console/gameboy.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Game Boy Color</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-            </div>
-         </section>
+         <!-- <section id="consoles" class="products__container">
+         <div class="products__headline">
+            <h4 class="products__title">Console</h4>
+            <a target="_blank" class="products__more" href="./products.html">
+               <p class="products__link">Ver tudo</p>
+               <img
+               src="../assets/img/arrow.svg"
+               alt="arrow icon"
+               class="products__arrow"
+               />
+            </a>
+         </div>
+         <ul id="list2" class="products__box" data-product></ul>
+      </section> -->
 
          <!-- -----DIVERSOS----- -->
 
-         <section id="diversos" class="products__container">
-            <div class="products__headline">
-               <h4 class="products__title">Diversos</h4>
-               <a target="_blank" class="products__more" href="./products.html">
-                  <p class="products__link">Ver tudo</p>
-                  <img
-                     src="../assets/img/arrow.svg"
-                     alt="arrow icon"
-                     class="products__arrow"
-                  />
-               </a>
-            </div>
-            <div class="products__box">
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/atari-shirt.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Camiseta Atari</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/snes-shirt.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Camiseta SNES</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/Skill-2.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Sonic</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items">
-                  <img
-                     src="../assets/img/diversos/pink-radio.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Rádio</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/diversos/vr-googles.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Óculos VR</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-               <div class="products__items products__hidden">
-                  <img
-                     src="../assets/img/diversos/picachu.png"
-                     alt=""
-                     class="products__image"
-                  />
-                  <p class="products__name">Picachu</p>
-                  <p class="products__price">R$ 60,00</p>
-                  <a href="" class="products__link">Ver produto</a>
-               </div>
-            </div>
-         </section>
+         <!-- <section id="diversos" class="products__container">
+         <div class="products__headline">
+            <h4 class="products__title">Diversos</h4>
+            <a target="_blank" class="products__more" href="./products.html">
+               <p class="products__link">Ver tudo</p>
+               <img
+               src="../assets/img/arrow.svg"
+               alt="arrow icon"
+               class="products__arrow"
+               />
+            </a>
+         </div>
+         <ul id="list3" class="products__box" data-product></ul>
+      </section> -->
       </main>
       <footer class="footer__container">
          <section class="footer__content">
@@ -429,14 +282,13 @@
          </section>
          <section class="footer__developer-container">
             <p class="footer__developer-text">
-               Desenvolvido por Mano Araújo <br />2021
+               Desenvolvido por Mano Araújo <br />2023
             </p>
          </section>
       </footer>
       <script src="../JS/main.js" type="module"></script>
-      <script
-         src="../JS/controllers/products-controller.js"
-         type="module"
-      ></script>
+      <script src="../JS/controllers/products-home.js" type="module"></script>
+      <script src="../JS/controllers/products-filter.js" type="module"></script>
+      <script src="../JS/controllers/go-product-page.js" type="module"></script>
    </body>
 </html>

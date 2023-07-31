@@ -1,24 +1,40 @@
 .products__container {
    background: var(--light-grey);
-
+   
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-
+   
    padding: 2rem;
    gap: 1rem;
-
+   
    height: fit-content;
 }
+
+.products__container-similar{
+   
+   background: var(--light-grey);
+   
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   
+   margin: 4rem;
+   gap: 1rem;
+   
+   height: fit-content;
+   
+}
+
 @media screen and (max-width: 426px) {
    .products__container {
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
-
+      
       padding: 1rem;
       gap: 1rem;
-
+      
       width: 100vw;
       height: 36.75rem;
    }
