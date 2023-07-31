@@ -3,7 +3,7 @@ import { productServices } from "../services/product-services.js";
 function createCard(id, name, price, imageUrl) {
    const showProduct = document.createElement("div");
 
-   showProduct.className = "products__items-all";
+   showProduct.className = "products__items";
    showProduct.setAttribute("data-id", id);
 
    showProduct.innerHTML = `
@@ -45,7 +45,7 @@ async function listProduct() {
       categoryMore.className = "products__more";
 
       const categoryLink = document.createElement("a");
-      categoryLink.target = "_blank";
+      // categoryLink.target = "_blank";
       categoryLink.href = "./products.html";
       categoryLink.className = "products__link";
       categoryLink.textContent = "Ver Mais";
@@ -120,6 +120,6 @@ function changeFrase(title, frase) {
    promoContainer.appendChild(fraseContainer);
 }
 
-export const displayProducts ={
+export const displayProducts = {
    createCard,
-}
+};

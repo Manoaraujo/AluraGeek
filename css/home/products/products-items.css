@@ -5,8 +5,14 @@
    justify-content: flex-start;
 }
 
-@media screen and (max-width: 769px) {
-   .products__hidden {
+@media screen and (max-width: 769px) and (max-width: 1024px) {
+   .products__items:nth-child(5),
+   .products__items:nth-child(6) {
+      display: none;
+   }
+}
+@media screen and (max-width: 1025px) {
+   .products__items:nth-child(6) {
       display: none;
    }
 }

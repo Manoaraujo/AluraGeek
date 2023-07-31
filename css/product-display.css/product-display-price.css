@@ -1,0 +1,8 @@
+.product__display-price {
+   color: var(--grey);
+   font-family: Raleway;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}

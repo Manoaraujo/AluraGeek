@@ -143,6 +143,8 @@ export function editForm(imageUrl, category, name, price, description) {
                   type="submit"
                   class="products__button-add"
                // />
+
+               <a class="products__link" href="javascript: history.go(-1)"> voltar</a>
    </form>
       `;
 
@@ -227,6 +229,7 @@ async function searchProductList(event) {
       );
    });
 
+   
    if (searchResult.length == 0) {
       products.innerHTML = `<h2 class="error-message">Não existem produtos com esse termo</h2>`;
    }

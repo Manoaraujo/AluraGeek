@@ -5,6 +5,7 @@ const products = document.querySelector("[data-product]");
 export default function card(name, imageUrl, price, id) {
    const showProduct = document.createElement("div");
    showProduct.className = "products__items-all ";
+   showProduct.setAttribute("data-id", id);
    showProduct.innerHTML = `
    <div class="products__image-box">
    <img 
@@ -14,7 +15,7 @@ export default function card(name, imageUrl, price, id) {
    </div>
    <p class="products__name">${name}</p>
    <p class="products__price">R$ ${price.toFixed(2)}</p>
-   <a href="" class="products__link" id="view-product" data-product-id>ver tudo</a>
+   <a href="" class="products__link" id="view-product" data-product-id>ver produto</a>
    
   
    `;

@@ -16,8 +16,8 @@ function ShowDetails(imageUrl, name, price, description) {
    <p class="product__display-title">${name}</p>
    <p class="product__display-price">R$ ${price.toFixed(2)} </p>
    <p class="product__display-text">${description}</p>
+   <a class="products__link" href="javascript: history.go(-1)"> voltar</a>
    </div> 
-   
    `;
    
    return productDiv;

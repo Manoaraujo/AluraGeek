@@ -1,0 +1,19 @@
+.product__display-title {
+   color: var(--grey);
+   font-family: Raleway;
+   font-size: 3.25rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+}
+
+@media screen and (max-width: 426px) {
+   .product__display-title {
+      font-size: 2rem;
+   }
+}
+@media screen and (max-width: 769px) {
+   .product__display-title {
+      font-size: 2rem;
+   }
+}
