@@ -59,6 +59,7 @@ JAVASCRIPT
 ## Previews
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/home.png">
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/produtos-alurageek.png">
+<img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/similares.png">
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/login.png">
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/reg.png">
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/edit.png">
