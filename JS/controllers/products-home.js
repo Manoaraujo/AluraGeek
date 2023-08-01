@@ -51,7 +51,7 @@ async function listProduct() {
       categoryMore.className = "products__more";
 
       const categoryLink = document.createElement("a");
-      categoryLink.href = "./products.html";
+      categoryLink.href = "./html/products.html";
       categoryLink.className = "products__link";
       categoryLink.textContent = "Ver Mais";
       categoryMore.appendChild(categoryLink);
