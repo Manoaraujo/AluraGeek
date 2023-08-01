@@ -5,7 +5,7 @@ function showDetailedProducts(event) {
       event.preventDefault();
       const selectedProduct = product.parentNode.getAttribute("data-id");
 
-      const productUrl = `../../html/products-home.html
+      const productUrl = `../../html/home-login.html
 ?id=${selectedProduct}`;
 
       window.location.href = productUrl;
