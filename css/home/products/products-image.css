@@ -2,6 +2,11 @@
    height: 10.875rem;
    flex-shrink: 0;
 }
+.products__arrow {
+   height: 1.5rem;
+   width: 1.5rem;
+   /* flex-shrink: 0; */
+}
 
 @media screen and (max-width: 426px) {
    .products__image {
