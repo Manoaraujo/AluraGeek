@@ -5,7 +5,7 @@ function showDetailedProducts(event) {
       event.preventDefault();
       const selectedProduct = product.parentNode.getAttribute("data-id");
 
-      const productUrl = `../../html/home-login.html
+      const productUrl = `../AluraGeek/html/home-login.html
 ?id=${selectedProduct}`;
 
       window.location.href = productUrl;
