@@ -57,7 +57,7 @@ async function listProduct() {
       categoryMore.appendChild(categoryLink);
 
       const categoryArrow = document.createElement("img");
-      categoryArrow.src = "./assets/img/arrow.svg";
+      categoryArrow.src = "assets/img/arrow.svg";
       categoryArrow.className = "products__arrow";
       categoryMore.appendChild(categoryArrow);
 
