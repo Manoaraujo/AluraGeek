@@ -56,7 +56,7 @@ JAVASCRIPT
 - [@Manoaraujo](https://github.com/Manoaraujo)
 
 
-## previews
+## Previews
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/home.png">
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/produtos-alurageek.png">
 <img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/login.png">
