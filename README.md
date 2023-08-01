@@ -51,5 +51,16 @@ JAVASCRIPT
 - Form fields and product registration with content validation.
 
 
+## Autores
+
+- [@Manoaraujo](https://github.com/Manoaraujo)
+
+
+## Previews
+<img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/home.png">
+<img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/produtos-alurageek.png">
+<img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/login.png">
+<img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/reg.png">
+<img src="https://github.com/Manoaraujo/AluraGeek/blob/main/previews/edit.png">
 
 
