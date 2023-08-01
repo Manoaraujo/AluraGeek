@@ -10,11 +10,10 @@ function createCard(id, name, price, imageUrl) {
    <img src="${imageUrl}" alt="" class="products__image-all" />
    <h2 class="products__name">${name}</h2>
    <p class="products__price">R$ ${price.toFixed(2)}</p>
-   <a href="" class="products__link" data-product-id>Ver produto</a>
+   <a href="" class="products__link" id="view-product" data-product-id>Ver produto</a>
    `;
 
    return showProduct;
-   s;
 }
 
 async function listProduct() {
