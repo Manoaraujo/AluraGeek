@@ -3,8 +3,8 @@
    flex-shrink: 0;
 }
 .products__arrow {
-   height: 1.5rem;
-   width: 1.5rem;
+   height: 0.875rem;
+   width: 0.875rem;
    /* flex-shrink: 0; */
 }
 
