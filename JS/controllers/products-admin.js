@@ -210,7 +210,7 @@ async function showEditForm(id) {
 
 // --------FILTER-------
 
-async function searchProductList(event) {
+async function searchProductListAdmin(event) {
    event.preventDefault();
 
    const searchData = document.querySelector("[data-search]").value;
@@ -229,7 +229,6 @@ async function searchProductList(event) {
       );
    });
 
-   
    if (searchResult.length == 0) {
       products.innerHTML = `<h2 class="error-message">Não existem produtos com esse termo</h2>`;
    }
@@ -237,4 +236,6 @@ async function searchProductList(event) {
 
 const searchButton = document.querySelector("[data-search-btn]");
 
-searchButton.addEventListener("click", (event) => searchProductList(event));
+searchButton.addEventListener("click", (event) =>
+   searchProductListAdmin(event)
+);
