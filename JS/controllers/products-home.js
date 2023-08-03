@@ -51,13 +51,13 @@ async function listProduct() {
       categoryMore.className = "products__more";
 
       const categoryLink = document.createElement("a");
-      categoryLink.href = "./html/products.html";
+      categoryLink.href = "/html/products.html";
       categoryLink.className = "products__link";
       categoryLink.textContent = "Ver Mais";
       categoryMore.appendChild(categoryLink);
 
       const categoryArrow = document.createElement("img");
-      categoryArrow.src = "./assets/img/arrow.png";
+      categoryArrow.src = "/assets/img/arrow.png";
       categoryArrow.className = "products__arrow";
       categoryMore.appendChild(categoryArrow);
 
