@@ -9,15 +9,15 @@
    height: fit-content;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (min-width: 900px) {
    .products__box {
-      width: 21rem;
-      flex-wrap: wrap;
+      width: fit-content;
    }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 426px) {
    .products__box {
-      width: 71rem;
+      width: 100%;
+      flex-wrap: wrap;
    }
 }

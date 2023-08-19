@@ -5,13 +5,14 @@
 
    width: 44rem;
 }
-@media screen and (max-width: 426px) {
+
+@media screen and (min-width: 900px) {
    .products__headline {
       width: 100%;
    }
 }
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 426px) {
    .products__headline {
-      width: 71rem;
+      width: 100%;
    }
 }

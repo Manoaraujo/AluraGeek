@@ -4,8 +4,10 @@
 
 @media screen and (max-width: 769px) {
    .products__container-all {
+      display: flex;
       height: fit-content;
       gap: 1rem;
+      align-items: center;
    }
 }
 

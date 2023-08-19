@@ -7,8 +7,14 @@
 }
 @media screen and (max-width: 768px) {
    .products__box-add {
-      width: 445rem;
-      padding: 2rem;
+      width: 40rem;
+      box-sizing: border-box;
+   }
+}
+@media screen and (max-width: 426px) {
+   .products__box-add {
+      width: 20rem;
+      padding: 1rem;
       box-sizing: border-box;
    }
 }

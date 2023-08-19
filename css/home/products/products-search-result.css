@@ -1,7 +1,19 @@
 .products__home-search {
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    align-items: center;
    margin: 2rem;
    gap: 1rem;
+   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 426px) {
+   .products__home-search {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      margin: 2rem;
+      gap: 1rem;
+   }
 }
